@@ -1,0 +1,5 @@
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.DAL\obj\Debug\net48\VetClinic.DAL.csproj.AssemblyReference.cache
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.DAL\obj\Debug\net48\VetClinic.DAL.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.DAL\obj\Debug\net48\VetClinic.DAL.AssemblyInfoInputs.cache
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.DAL\obj\Debug\net48\VetClinic.DAL.AssemblyInfo.cs
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.DAL\obj\Debug\net48\VetClinic.DAL.csproj.CoreCompileInputs.cache

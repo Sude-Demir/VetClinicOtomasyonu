@@ -1,0 +1,28 @@
+﻿  Geri y├╝klenecek projeler belirleniyor...
+  Geri y├╝kleme i├ğin t├╝m projeler g├╝ncel.
+  VetClinic.DAL -> C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.DAL\bin\Debug\net8.0-windows\VetClinic.DAL.dll
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(13,12): error CS0579: Yinelenen 'System.Reflection.AssemblyCompanyAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(14,12): error CS0579: Yinelenen 'System.Reflection.AssemblyConfigurationAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(15,12): error CS0579: Yinelenen 'System.Reflection.AssemblyFileVersionAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(17,12): error CS0579: Yinelenen 'System.Reflection.AssemblyProductAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(18,12): error CS0579: Yinelenen 'System.Reflection.AssemblyTitleAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(19,12): error CS0579: Yinelenen 'System.Reflection.AssemblyVersionAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\FrmHastaDetay.cs(1,7): error CS0246: 'DevExpress' t├╝r├╝ veya ad alan─▒ ad─▒ bulunamad─▒ (bir using y├Ânergeniz veya derleme ba┼şvurunuz mu eksik?) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\Program.cs(1,7): error CS0246: 'DevExpress' t├╝r├╝ veya ad alan─▒ ad─▒ bulunamad─▒ (bir using y├Ânergeniz veya derleme ba┼şvurunuz mu eksik?) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\FrmHastaDetay.cs(6,42): error CS0246: 'XtraForm' t├╝r├╝ veya ad alan─▒ ad─▒ bulunamad─▒ (bir using y├Ânergeniz veya derleme ba┼şvurunuz mu eksik?) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+
+Olu┼şturma BA┼ŞARISIZ OLDU.
+
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(13,12): error CS0579: Yinelenen 'System.Reflection.AssemblyCompanyAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(14,12): error CS0579: Yinelenen 'System.Reflection.AssemblyConfigurationAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(15,12): error CS0579: Yinelenen 'System.Reflection.AssemblyFileVersionAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(17,12): error CS0579: Yinelenen 'System.Reflection.AssemblyProductAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(18,12): error CS0579: Yinelenen 'System.Reflection.AssemblyTitleAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net8.0-windows\VetClinic.UI1.AssemblyInfo.cs(19,12): error CS0579: Yinelenen 'System.Reflection.AssemblyVersionAttribute' ├Âzniteli─şi [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\FrmHastaDetay.cs(1,7): error CS0246: 'DevExpress' t├╝r├╝ veya ad alan─▒ ad─▒ bulunamad─▒ (bir using y├Ânergeniz veya derleme ba┼şvurunuz mu eksik?) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\Program.cs(1,7): error CS0246: 'DevExpress' t├╝r├╝ veya ad alan─▒ ad─▒ bulunamad─▒ (bir using y├Ânergeniz veya derleme ba┼şvurunuz mu eksik?) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\FrmHastaDetay.cs(6,42): error CS0246: 'XtraForm' t├╝r├╝ veya ad alan─▒ ad─▒ bulunamad─▒ (bir using y├Ânergeniz veya derleme ba┼şvurunuz mu eksik?) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+    0 Uyar─▒
+    9 Hata
+
+Ge├ğen S├╝re 00:00:01.98

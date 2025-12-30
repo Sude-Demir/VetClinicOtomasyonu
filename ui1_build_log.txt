@@ -1,0 +1,9 @@
+﻿C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj(29,4): error MSB4025: Proje dosyas─▒ y├╝klenemedi. There are multiple root elements. Line 29, position 4.
+
+Olu┼şturma BA┼ŞARISIZ OLDU.
+
+C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj(29,4): error MSB4025: Proje dosyas─▒ y├╝klenemedi. There are multiple root elements. Line 29, position 4.
+    0 Uyar─▒
+    1 Hata
+
+Ge├ğen S├╝re 00:00:00.04
