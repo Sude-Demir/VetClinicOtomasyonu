@@ -1,0 +1,34 @@
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build Results
+[Bb]in/
+[Oo]bj/
+
+# Devexpress caches
+.dx/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of package restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if using NuGet bundles
+# *.nuget.props
+# *.nuget.targets
+
+# OS generated files
+$.DS_Store
+$desktop.ini
+$Thumbs.db

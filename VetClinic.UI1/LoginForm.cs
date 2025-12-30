@@ -15,6 +15,8 @@ namespace VetClinic.UI1
 {
     public partial class LoginForm : Form
     {
+        public static bool AdminMi = false;
+        public static string GirisYapanKullanici = "";
         public LoginForm()
         {
             InitializeComponent();

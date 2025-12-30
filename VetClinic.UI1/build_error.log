@@ -1,0 +1,1023 @@
+Oluşturma başlatıldı: 30.12.2025 14:32:56.
+Günlük kaydı ayrıntı düzeyi Detailed olarak ayarlandı.     0>İşlem = "C:\Program Files\dotnet\dotnet.exe"
+       MSBuild yürütülebilir yolu = "C:\Program Files\dotnet\sdk\10.0.101\MSBuild.dll"
+       Komut satırı bağımsız değişkenleri = "C:\Program Files\dotnet\sdk\10.0.101\MSBuild.dll -maxcpucount --verbosity:m -tlp:default=auto --property:NuGetInteractive=true --restoreProperty:NuGetInteractive=true --restoreProperty:EnableDefaultCompileItems=false --restoreProperty:EnableDefaultEmbeddedResourceItems=false --restoreProperty:EnableDefaultNoneItems=false C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj /fl /flp:logfile=build_error.log -consoleloggerparameters:Summary -restore -distributedlogger:Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildLogger,C:\Program Files\dotnet\sdk\10.0.101\dotnet.dll*Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildForwardingLogger,C:\Program Files\dotnet\sdk\10.0.101\dotnet.dll -nologo"
+       Geçerli dizin = "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1"
+       MSBuild sürümü = "18.0.6+fad253f51"
+       Windows kayıt defteri anahtarı LongPathsEnabled ayarına bağlı olarak LongPaths özelliği etkin.
+       Windows kayıt defteri anahtarı VerifiedAndReputablePolicyState'e göre SAC durumu = 0: kapalı.
+       C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj(3,92): message : 'C:\Program Files\dotnet\sdk\10.0.101\' değerine sahip 'MSBuildExtensionsPath' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props(60,5): message : Özellik yeniden ataması: $(MSBuildProjectExtensionsPath)="C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\" (önceki değer: "obj\") konum: C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props (60,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props(84,119): message : 'C:\Users\yakup\AppData\Local\Microsoft\MSBuild' değerine sahip 'MSBuildUserExtensionsPath' özelliği ortamdan genişletildi.
+       Derleme Evaluation sırasında yüklendi: System.Threading.Tasks.Parallel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.1\System.Threading.Tasks.Parallel.dll, MVID: c0c31281-a1da-475c-91e3-f539049c5ef1, AssemblyLoadContext: Default)
+       C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.CSharp.Core.targets(200,5): message : Özellik yeniden ataması: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:7.3 -define:DEBUG;TRACE" (önceki değer: "-langversion:7.3") konum: C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.CSharp.Core.targets (200,5)
+       Derleme Evaluation sırasında yüklendi: System.Threading.ThreadPool, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.1\System.Threading.ThreadPool.dll, MVID: 69a6ab9e-f176-4ce1-bce3-b687a842a42b, AssemblyLoadContext: Default)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.props(117,5): message : Özellik yeniden ataması: $(AvailablePlatforms)="Any CPU,x86,x64,ARM64" (önceki değer: "Any CPU,x86,x64") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.props (117,5)
+       Derleme Evaluation sırasında yüklendi: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Build.Utilities.Core.dll, MVID: 0ce0dd4f-98bd-4767-bc61-9eb82d6f94a6, AssemblyLoadContext: Default)
+       Derleme Evaluation sırasında yüklendi: System.Net.Sockets, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.1\System.Net.Sockets.dll, MVID: 9fc444e4-6ba6-4bcf-9336-c64046eb8380, AssemblyLoadContext: Default)
+       Derleme Evaluation sırasında yüklendi: System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.1\System.Threading.Overlapped.dll, MVID: 776b2594-5863-4fd1-996d-c9d5cb21fdfd, AssemblyLoadContext: Default)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(175,5): message : Özellik yeniden ataması: $(_DebugSymbolsProduced)="true" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (175,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(185,5): message : Özellik yeniden ataması: $(_DocumentationFileProduced)="false" (önceki değer: "true") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (185,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(392,5): message : Özellik yeniden ataması: $(MSBuildCopyMarkerName)="VetClini.DBA669BA" (önceki değer: "VetClinic.UI1.csproj") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (392,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(393,5): message : Özellik yeniden ataması: $(MSBuildCopyMarkerName)="VetClini.DBA669BA.Up2Date" (önceki değer: "VetClini.DBA669BA") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (393,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(527,5): message : Özellik yeniden ataması: $(ProcessorArchitecture)="msil" (önceki değer: "AnyCPU") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (527,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(580,5): message : Özellik yeniden ataması: $(DelaySign)="" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (580,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(649,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};" (önceki değer: "{CandidateAssemblyFiles}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (649,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(650,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem}" (önceki değer: "{CandidateAssemblyFiles};") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (650,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(651,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (651,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(652,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (652,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(653,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (653,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(654,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (654,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(655,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (655,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(656,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (656,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(657,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (657,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2606,5): message : 'C:\Users\yakup\AppData\Local' değerine sahip 'LOCALAPPDATA' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3934,5): message : Özellik yeniden ataması: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (önceki değer: "") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (3934,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3935,5): message : Özellik yeniden ataması: $(_SGenGenerateSerializationAssembliesConfig)="Off" (önceki değer: "Auto") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (3935,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message : Özellik yeniden ataması: $(_TargetsThatPrepareProjectReferences)="
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (önceki değer: "_SplitProjectReferencesByFileExistence") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (5146,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(6959,5): message : 'C:\Program Files\dotnet\sdk\10.0.101' değerine sahip 'MSBuildExtensionsPath32' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message : Özellik yeniden ataması: $(ResolveReferencesDependsOn)="
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ImplicitlyExpandDesignTimeFacades
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     " (önceki değer: "
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets (74,5)
+       "NuGetInteractive" özelliği genel bir özelliktir ve değiştirilemez.
+       "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets" projesindeki "GetFrameworkPaths" hedefi kullanılarak "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" projesindeki "GetFrameworkPaths" hedefinin üzerine yazılıyor.
+       "ResolveNuGetPackageAssets" konumundaki bir AfterTargets özniteliğinde listelenen "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets (27,11)" hedefi projede yok ve göz ardı edilecek.
+     1>1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (Restore hedef).
+     1>Proje dosyası ToolsVersion="15.0" içeriyor. Bu araç seti bilinmiyor veya eksik olabilir; bu durumda uygun MSBuild sürümünü yükleyerek bu sorunu çözebilirsiniz. Derleme, ilke nedeniyle belirli bir ToolsVersion’a zorlanmış da olabilir. Projenin ToolsVersion="Current" değerine sahip olduğu kabul ediliyor. Daha fazla bilgi edinmek için bkz. http://go.microsoft.com/fwlink/?LinkId=293424.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_LoadRestoreGraphEntryPoints" hedefi ("_FilterRestoreGraphProjectInputItems" hedefi buna bağımlı):
+     1>"VetClinic.UI1.csproj" projesinde "_LoadRestoreGraphEntryPoints" hedefini oluşturma tamamlandı.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_FilterRestoreGraphProjectInputItems" hedefi ("_GenerateRestoreGraph" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "RemoveDuplicates" görevi kullanılıyor.
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "MSBuild" görevi kullanılıyor.
+       "MSBuild" görevi
+         Genel Özellikler:
+           ExcludeRestorePackageImports=true
+     0>C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj(3,92): message : 'C:\Program Files\dotnet\sdk\10.0.101\' değerine sahip 'MSBuildExtensionsPath' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props(60,5): message : Özellik yeniden ataması: $(MSBuildProjectExtensionsPath)="C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\" (önceki değer: "obj\") konum: C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props (60,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props(84,119): message : 'C:\Users\yakup\AppData\Local\Microsoft\MSBuild' değerine sahip 'MSBuildUserExtensionsPath' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.CSharp.Core.targets(200,5): message : Özellik yeniden ataması: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:7.3 -define:DEBUG;TRACE" (önceki değer: "-langversion:7.3") konum: C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.CSharp.Core.targets (200,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.props(117,5): message : Özellik yeniden ataması: $(AvailablePlatforms)="Any CPU,x86,x64,ARM64" (önceki değer: "Any CPU,x86,x64") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.props (117,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(175,5): message : Özellik yeniden ataması: $(_DebugSymbolsProduced)="true" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (175,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(185,5): message : Özellik yeniden ataması: $(_DocumentationFileProduced)="false" (önceki değer: "true") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (185,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(392,5): message : Özellik yeniden ataması: $(MSBuildCopyMarkerName)="VetClini.DBA669BA" (önceki değer: "VetClinic.UI1.csproj") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (392,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(393,5): message : Özellik yeniden ataması: $(MSBuildCopyMarkerName)="VetClini.DBA669BA.Up2Date" (önceki değer: "VetClini.DBA669BA") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (393,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(527,5): message : Özellik yeniden ataması: $(ProcessorArchitecture)="msil" (önceki değer: "AnyCPU") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (527,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(580,5): message : Özellik yeniden ataması: $(DelaySign)="" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (580,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(649,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};" (önceki değer: "{CandidateAssemblyFiles}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (649,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(650,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem}" (önceki değer: "{CandidateAssemblyFiles};") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (650,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(651,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (651,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(652,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (652,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(653,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (653,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(654,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (654,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(655,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (655,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(656,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (656,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(657,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (657,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2606,5): message : 'C:\Users\yakup\AppData\Local' değerine sahip 'LOCALAPPDATA' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3934,5): message : Özellik yeniden ataması: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (önceki değer: "") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (3934,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3935,5): message : Özellik yeniden ataması: $(_SGenGenerateSerializationAssembliesConfig)="Off" (önceki değer: "Auto") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (3935,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message : Özellik yeniden ataması: $(_TargetsThatPrepareProjectReferences)="
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (önceki değer: "_SplitProjectReferencesByFileExistence") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (5146,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(6959,5): message : 'C:\Program Files\dotnet\sdk\10.0.101' değerine sahip 'MSBuildExtensionsPath32' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message : Özellik yeniden ataması: $(ResolveReferencesDependsOn)="
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ImplicitlyExpandDesignTimeFacades
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     " (önceki değer: "
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets (74,5)
+       "NuGetInteractive" özelliği genel bir özelliktir ve değiştirilemez.
+       "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets" projesindeki "GetFrameworkPaths" hedefi kullanılarak "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" projesindeki "GetFrameworkPaths" hedefinin üzerine yazılıyor.
+       "ResolveNuGetPackageAssets" konumundaki bir AfterTargets özniteliğinde listelenen "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets (27,11)" hedefi projede yok ve göz ardı edilecek.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (1) 1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (1:2) oluşturuyor (_IsProjectRestoreSupported hedef).
+   1:2>Proje dosyası ToolsVersion="15.0" içeriyor. Bu araç seti bilinmiyor veya eksik olabilir; bu durumda uygun MSBuild sürümünü yükleyerek bu sorunu çözebilirsiniz. Derleme, ilke nedeniyle belirli bir ToolsVersion’a zorlanmış da olabilir. Projenin ToolsVersion="Current" değerine sahip olduğu kabul ediliyor. Daha fazla bilgi edinmek için bkz. http://go.microsoft.com/fwlink/?LinkId=293424.
+   1:2>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_IsProjectRestoreSupported" hedefi (giriş noktası):
+   1:2>"VetClinic.UI1.csproj" projesinde "_IsProjectRestoreSupported" hedefini oluşturma tamamlandı.
+   1:2>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (_IsProjectRestoreSupported hedef).
+     1>"MSBuild" görevini yürütme tamamlandı.
+       Derleme TaskRun sırasında yüklendi: NuGet.Build.Tasks, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll, MVID: 1d7b2a50-0801-4407-864a-c0611e7b6f2d, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+       Derleme TaskRun sırasında yüklendi: System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.1\System.Reflection.Metadata.dll, MVID: 3dffb579-478e-4936-a66f-3cf5f722eefe, AssemblyLoadContext: Default)
+       Derleme TaskRun sırasında yüklendi: NuGet.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Common.dll, MVID: e68f94a8-8ead-49da-8d66-ddbffff51250, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+       Derleme TaskRun sırasında yüklendi: NuGet.Commands, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Commands.dll, MVID: cf5dfc68-8202-4a78-a2e1-4e04847fc3ac, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+       Derleme TaskRun sırasında yüklendi: NuGet.ProjectModel, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.ProjectModel.dll, MVID: 74e299f3-0a8a-48ce-b793-3c6caaf0a1df, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "WarnForInvalidProjectsTask" görevi kullanılıyor.
+       "WarnForInvalidProjectsTask" görevi
+       "WarnForInvalidProjectsTask" görevini yürütme tamamlandı.
+     1>"VetClinic.UI1.csproj" projesinde "_FilterRestoreGraphProjectInputItems" hedefini oluşturma tamamlandı.
+       "_FilterRestoreGraphProjectInputItems" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GetAllRestoreProjectPathItems" hedefi ("_GenerateRestoreGraph" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "NuGetMessageTask" görevi kullanılıyor.
+       "NuGetMessageTask" görevi
+         Derleme TaskRun (NuGet.Build.Tasks.NuGetMessageTask) sırasında yüklendi: NuGet.Build.Tasks.resources, Version=7.0.0.0, Culture=tr, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\tr\NuGet.Build.Tasks.resources.dll, MVID: bf08745b-bbfe-4f45-b464-9edaab9e42a5, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Geri yüklenecek projeler belirleniyor...
+       "NuGetMessageTask" görevini yürütme tamamlandı.
+       "MSBuild" görevi
+         Genel Özellikler:
+           ExcludeRestorePackageImports=true
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (1) 1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (1:3) oluşturuyor (_GenerateRestoreProjectPathWalk hedef).
+   1:3>Proje dosyası ToolsVersion="15.0" içeriyor. Bu araç seti bilinmiyor veya eksik olabilir; bu durumda uygun MSBuild sürümünü yükleyerek bu sorunu çözebilirsiniz. Derleme, ilke nedeniyle belirli bir ToolsVersion’a zorlanmış da olabilir. Projenin ToolsVersion="Current" değerine sahip olduğu kabul ediliyor. Daha fazla bilgi edinmek için bkz. http://go.microsoft.com/fwlink/?LinkId=293424.
+   1:3>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreProjectPathItemsPerFramework" hedefi ("_GenerateRestoreProjectPathItemsCurrentProject" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "ConvertToAbsolutePath" görevi kullanılıyor.
+       "ConvertToAbsolutePath" görevi
+       "ConvertToAbsolutePath" görevini yürütme tamamlandı.
+   1:3>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreProjectPathItemsPerFramework" hedefini oluşturma tamamlandı.
+   1:3>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreProjectPathItemsCurrentProject" hedefi ("_GenerateRestoreProjectPathItems" hedefi buna bağımlı):
+   1:3>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreProjectPathItemsCurrentProject" hedefini oluşturma tamamlandı.
+   1:3>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreProjectPathItems" hedefi ("_GenerateRestoreProjectPathWalk" hedefi buna bağımlı):
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+   1:3>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreProjectPathItems" hedefini oluşturma tamamlandı.
+   1:3>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreProjectPathWalk" hedefi (giriş noktası):
+       "MSBuild" görevi
+       "MSBuild" görevini yürütme tamamlandı.
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+   1:3>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreProjectPathWalk" hedefini oluşturma tamamlandı.
+   1:3>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (_GenerateRestoreProjectPathWalk hedef).
+     1>"MSBuild" görevini yürütme tamamlandı.
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+       "MSBuild" görevi
+         Genel Özellikler:
+           ExcludeRestorePackageImports=true
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (1) 1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (1:4) oluşturuyor (_IsProjectRestoreSupported hedef).
+   1:4>"_IsProjectRestoreSupported" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:4>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (_IsProjectRestoreSupported hedef).
+     1>"MSBuild" görevini yürütme tamamlandı.
+     1>"VetClinic.UI1.csproj" projesinde "_GetAllRestoreProjectPathItems" hedefini oluşturma tamamlandı.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreGraph" hedefi ("Restore" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "Message" görevi kullanılıyor.
+       "Message" görevi
+         Generating dg file
+       "Message" görevini yürütme tamamlandı.
+       "Message" görevi
+         C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj
+       "Message" görevini yürütme tamamlandı.
+       "MSBuild" görevi
+         Genel Özellikler:
+           ExcludeRestorePackageImports=true
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (1) 1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (1:5) oluşturuyor (_GenerateRestoreGraphProjectEntry hedef).
+   1:5>Proje dosyası ToolsVersion="15.0" içeriyor. Bu araç seti bilinmiyor veya eksik olabilir; bu durumda uygun MSBuild sürümünü yükleyerek bu sorunu çözebilirsiniz. Derleme, ilke nedeniyle belirli bir ToolsVersion’a zorlanmış da olabilir. Projenin ToolsVersion="Current" değerine sahip olduğu kabul ediliyor. Daha fazla bilgi edinmek için bkz. http://go.microsoft.com/fwlink/?LinkId=293424.
+   1:5>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "CollectPackageReferences" hedefi ("_GetRestoreProjectStyle" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "CheckForDuplicateNuGetItemsTask" görevi kullanılıyor.
+       "CheckForDuplicateNuGetItemsTask" görevi
+       "CheckForDuplicateNuGetItemsTask" görevini yürütme tamamlandı.
+   1:5>"VetClinic.UI1.csproj" projesinde "CollectPackageReferences" hedefini oluşturma tamamlandı.
+   1:5>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GetRestoreProjectStyle" hedefi ("_GenerateRestoreSpecs" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "GetRestoreProjectStyleTask" görevi kullanılıyor.
+       "GetRestoreProjectStyleTask" görevi
+         Derleme TaskRun (NuGet.Build.Tasks.GetRestoreProjectStyleTask) sırasında yüklendi: NuGet.Configuration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Configuration.dll, MVID: 48b0ca1c-220b-4c21-8fab-d2d14e375158, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+       "GetRestoreProjectStyleTask" görevini yürütme tamamlandı.
+   1:5>"VetClinic.UI1.csproj" projesinde "_GetRestoreProjectStyle" hedefini oluşturma tamamlandı.
+   1:5>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreSpecs" hedefi ("_GenerateRestoreGraphProjectEntry" hedefi buna bağımlı):
+       "Message" görevi
+         Restore entry point C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj
+       "Message" görevini yürütme tamamlandı.
+   1:5>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreSpecs" hedefini oluşturma tamamlandı.
+   1:5>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateDotnetCliToolReferenceSpecs" hedefi ("_GenerateRestoreGraphProjectEntry" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "GetRestoreDotnetCliToolsTask" görevi kullanılıyor.
+       "GetRestoreDotnetCliToolsTask" görevi
+       "GetRestoreDotnetCliToolsTask" görevini yürütme tamamlandı.
+   1:5>"VetClinic.UI1.csproj" projesinde "_GenerateDotnetCliToolReferenceSpecs" hedefini oluşturma tamamlandı.
+   1:5>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreGraphProjectEntry" hedefi (giriş noktası):
+   1:5>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreGraphProjectEntry" hedefini oluşturma tamamlandı.
+   1:5>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (_GenerateRestoreGraphProjectEntry hedef).
+     1>"MSBuild" görevini yürütme tamamlandı.
+       "MSBuild" görevi
+         Genel Özellikler:
+           ExcludeRestorePackageImports=true
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (1) 1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (1:6) oluşturuyor (_GenerateProjectRestoreGraph hedef).
+   1:6>Proje dosyası ToolsVersion="15.0" içeriyor. Bu araç seti bilinmiyor veya eksik olabilir; bu durumda uygun MSBuild sürümünü yükleyerek bu sorunu çözebilirsiniz. Derleme, ilke nedeniyle belirli bir ToolsVersion’a zorlanmış da olabilir. Projenin ToolsVersion="Current" değerine sahip olduğu kabul ediliyor. Daha fazla bilgi edinmek için bkz. http://go.microsoft.com/fwlink/?LinkId=293424.
+       "_GetRestoreProjectStyle" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "_GetRestoreProjectStyle" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "_GetRestoreProjectStyle" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GetRestoreTargetFrameworkOverride" hedefi ("_GetRestoreTargetFrameworksOutput" hedefi buna bağımlı):
+   1:6>"VetClinic.UI1.csproj" projesinde "_GetRestoreTargetFrameworkOverride" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GetRestoreTargetFrameworksOutput" hedefi ("_GenerateRestoreProjectSpec" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "GetProjectTargetFrameworksTask" görevi kullanılıyor.
+       "GetProjectTargetFrameworksTask" görevi
+         Derleme TaskRun (NuGet.Build.Tasks.GetProjectTargetFrameworksTask) sırasında yüklendi: NuGet.Frameworks, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Frameworks.dll, MVID: e913a35d-983d-474c-b844-7b99e57f87c3, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+       "GetProjectTargetFrameworksTask" görevini yürütme tamamlandı.
+   1:6>"VetClinic.UI1.csproj" projesinde "_GetRestoreTargetFrameworksOutput" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreProjectSpec" hedefi ("_GenerateProjectRestoreGraph" hedefi buna bağımlı):
+   1:6>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreProjectSpec" hedefini oluşturma tamamlandı.
+       "_GetRestoreProjectStyle" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "CollectPackageReferences" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "CollectPackageDownloads" hedefi ("_CollectRestoreInputs" hedefi buna bağımlı):
+       "CheckForDuplicateNuGetItemsTask" görevi
+       "CheckForDuplicateNuGetItemsTask" görevini yürütme tamamlandı.
+   1:6>"VetClinic.UI1.csproj" projesinde "CollectPackageDownloads" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "CollectFrameworkReferences" hedefi ("_CollectRestoreInputs" hedefi buna bağımlı):
+   1:6>"VetClinic.UI1.csproj" projesinde "CollectFrameworkReferences" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "CollectCentralPackageVersions" hedefi ("_CollectRestoreInputs" hedefi buna bağımlı):
+       "CheckForDuplicateNuGetItemsTask" görevi
+       "CheckForDuplicateNuGetItemsTask" görevini yürütme tamamlandı.
+   1:6>"VetClinic.UI1.csproj" projesinde "CollectCentralPackageVersions" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "CollectNuGetAuditSuppressions" hedefi ("_CollectRestoreInputs" hedefi buna bağımlı):
+       "CheckForDuplicateNuGetItemsTask" görevi
+       "CheckForDuplicateNuGetItemsTask" görevini yürütme tamamlandı.
+   1:6>"VetClinic.UI1.csproj" projesinde "CollectNuGetAuditSuppressions" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "CollectPrunePackageReferences" hedefi ("_CollectRestoreInputs" hedefi buna bağımlı):
+       "CheckForDuplicateNuGetItemsTask" görevi
+       "CheckForDuplicateNuGetItemsTask" görevini yürütme tamamlandı.
+   1:6>"VetClinic.UI1.csproj" projesinde "CollectPrunePackageReferences" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_CollectRestoreInputs" hedefi ("_GenerateProjectRestoreGraphPerFramework" hedefi buna bağımlı):
+   1:6>"VetClinic.UI1.csproj" projesinde "_CollectRestoreInputs" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateProjectRestoreGraphPerFramework" hedefi ("_GenerateProjectRestoreGraphCurrentProject" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "GetRestoreProjectReferencesTask" görevi kullanılıyor.
+       "GetRestoreProjectReferencesTask" görevi
+       "GetRestoreProjectReferencesTask" görevini yürütme tamamlandı.
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "GetRestoreNuGetAuditSuppressionsTask" görevi kullanılıyor.
+       "GetRestoreNuGetAuditSuppressionsTask" görevi
+       "GetRestoreNuGetAuditSuppressionsTask" görevini yürütme tamamlandı.
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "GetRestorePrunePackageReferencesTask" görevi kullanılıyor.
+       "GetRestorePrunePackageReferencesTask" görevi
+       "GetRestorePrunePackageReferencesTask" görevini yürütme tamamlandı.
+   1:6>"VetClinic.UI1.csproj" projesinde "_GenerateProjectRestoreGraphPerFramework" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateProjectRestoreGraphCurrentProject" hedefi ("_GenerateRestoreDependencies" hedefi buna bağımlı):
+   1:6>"VetClinic.UI1.csproj" projesinde "_GenerateProjectRestoreGraphCurrentProject" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateRestoreDependencies" hedefi ("_GenerateProjectRestoreGraph" hedefi buna bağımlı):
+   1:6>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreDependencies" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "_GenerateProjectRestoreGraph" hedefi (giriş noktası):
+   1:6>"VetClinic.UI1.csproj" projesinde "_GenerateProjectRestoreGraph" hedefini oluşturma tamamlandı.
+   1:6>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (_GenerateProjectRestoreGraph hedef).
+     1>"MSBuild" görevini yürütme tamamlandı.
+     1>"VetClinic.UI1.csproj" projesinde "_GenerateRestoreGraph" hedefini oluşturma tamamlandı.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\NuGet.targets" dosyasındaki "Restore" hedefi (giriş noktası):
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+       "C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll" derlemesindeki "RestoreTask" görevi kullanılıyor.
+       "RestoreTask" görevi
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.Packaging, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Packaging.dll, MVID: cbfc9ed0-7866-469b-9c1f-f25d50faee97, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.LibraryModel, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.LibraryModel.dll, MVID: 68a4d051-6665-4b74-809a-7f38ce15fd8b, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.Versioning, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Versioning.dll, MVID: db6fa9f4-313d-4c04-8b3b-dcde2ca3467c, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.Protocol, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Protocol.dll, MVID: b29fe50d-16a8-4275-9f03-4c61a549b3e9, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.Credentials, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.Credentials.dll, MVID: a9f47e63-9cf1-4e3d-a1ac-19ffa2efaf93, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (konum: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.1\System.Collections.NonGeneric.dll, MVID: 5048f4ab-dbd8-4b4b-9e0f-fa8f211354cf, AssemblyLoadContext: Default)
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.Packaging.resources, Version=7.0.0.0, Culture=tr, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\tr\NuGet.Packaging.resources.dll, MVID: 1ada6be2-df5f-4e07-bec8-d2545fe10b25, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         X.509 sertifika zinciri doğrulaması, kod imzalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+         X.509 sertifika zinciri doğrulaması, zaman damgalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+         Derleme TaskRun (NuGet.Build.Tasks.RestoreTask) sırasında yüklendi: NuGet.DependencyResolver.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (konum: C:\Program Files\dotnet\sdk\10.0.101\NuGet.DependencyResolver.Core.dll, MVID: 56b6dee4-cc63-4485-beb0-97d06d74b4ea, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.101\NuGet.Build.Tasks.dll)
+         Yapılacak işlem yok. Belirtilen projelerden hiçbiri geri yüklenecek paketleri içermiyor.
+       "RestoreTask" görevini yürütme tamamlandı.
+     1>"VetClinic.UI1.csproj" projesinde "Restore" hedefini oluşturma tamamlandı.
+     1>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (Restore hedef).
+     0>C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj(3,92): message : 'C:\Program Files\dotnet\sdk\10.0.101\' değerine sahip 'MSBuildExtensionsPath' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props(60,5): message : Özellik yeniden ataması: $(MSBuildProjectExtensionsPath)="C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\" (önceki değer: "obj\") konum: C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props (60,5)
+       C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\VetClinic.UI1.csproj.nuget.g.props(7,5): message : 'C:\Users\yakup' değerine sahip 'USERPROFILE' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Current\Microsoft.Common.props(84,119): message : 'C:\Users\yakup\AppData\Local\Microsoft\MSBuild' değerine sahip 'MSBuildUserExtensionsPath' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.CSharp.Core.targets(200,5): message : Özellik yeniden ataması: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:7.3 -define:DEBUG;TRACE" (önceki değer: "-langversion:7.3") konum: C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.CSharp.Core.targets (200,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.props(117,5): message : Özellik yeniden ataması: $(AvailablePlatforms)="Any CPU,x86,x64,ARM64" (önceki değer: "Any CPU,x86,x64") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.props (117,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(175,5): message : Özellik yeniden ataması: $(_DebugSymbolsProduced)="true" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (175,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(185,5): message : Özellik yeniden ataması: $(_DocumentationFileProduced)="false" (önceki değer: "true") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (185,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(392,5): message : Özellik yeniden ataması: $(MSBuildCopyMarkerName)="VetClini.DBA669BA" (önceki değer: "VetClinic.UI1.csproj") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (392,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(393,5): message : Özellik yeniden ataması: $(MSBuildCopyMarkerName)="VetClini.DBA669BA.Up2Date" (önceki değer: "VetClini.DBA669BA") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (393,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(527,5): message : Özellik yeniden ataması: $(ProcessorArchitecture)="msil" (önceki değer: "AnyCPU") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (527,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(580,5): message : Özellik yeniden ataması: $(DelaySign)="" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (580,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(649,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};" (önceki değer: "{CandidateAssemblyFiles}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (649,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(650,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem}" (önceki değer: "{CandidateAssemblyFiles};") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (650,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(651,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (651,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(652,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (652,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(653,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (653,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(654,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (654,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(655,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (655,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(656,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (656,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(657,5): message : Özellik yeniden ataması: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\" (önceki değer: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (657,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2606,5): message : 'C:\Users\yakup\AppData\Local' değerine sahip 'LOCALAPPDATA' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3934,5): message : Özellik yeniden ataması: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (önceki değer: "") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (3934,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3935,5): message : Özellik yeniden ataması: $(_SGenGenerateSerializationAssembliesConfig)="Off" (önceki değer: "Auto") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (3935,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message : Özellik yeniden ataması: $(_TargetsThatPrepareProjectReferences)="
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (önceki değer: "_SplitProjectReferencesByFileExistence") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (5146,5)
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(6959,5): message : 'C:\Program Files\dotnet\sdk\10.0.101' değerine sahip 'MSBuildExtensionsPath32' özelliği ortamdan genişletildi.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message : Özellik yeniden ataması: $(ResolveReferencesDependsOn)="
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ImplicitlyExpandDesignTimeFacades
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     " (önceki değer: "
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets (74,5)
+       "NuGetInteractive" özelliği genel bir özelliktir ve değiştirilemez.
+       "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets" projesindeki "GetFrameworkPaths" hedefi kullanılarak "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" projesindeki "GetFrameworkPaths" hedefinin üzerine yazılıyor.
+       "ResolveNuGetPackageAssets" konumundaki bir AfterTargets özniteliğinde listelenen "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets (27,11)" hedefi projede yok ve göz ardı edilecek.
+   1:7>1 düğümünde "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesi (varsayılan hedefler).
+   1:7>Proje dosyası ToolsVersion="15.0" içeriyor. Bu araç seti bilinmiyor veya eksik olabilir; bu durumda uygun MSBuild sürümünü yükleyerek bu sorunu çözebilirsiniz. Derleme, ilke nedeniyle belirli bir ToolsVersion’a zorlanmış da olabilir. Projenin ToolsVersion="Current" değerine sahip olduğu kabul ediliyor. Daha fazla bilgi edinmek için bkz. http://go.microsoft.com/fwlink/?LinkId=293424.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_CheckForInvalidConfigurationAndPlatform" hedefi ("BeforeBuild" hedefi buna bağımlı):
+       "Message" görevi
+         Configuration=Debug
+       "Message" görevini yürütme tamamlandı.
+       "Message" görevi
+         Platform=AnyCPU
+       "Message" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "_CheckForInvalidConfigurationAndPlatform" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "BeforeBuild" hedefi ("Build" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "BeforeBuild" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "BuildOnlySettings" hedefi ("CoreBuild" hedefi buna bağımlı):
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(1168,7): message : Özellik yeniden ataması: $(BuildingProject)="true" (önceki değer: "false") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (1168,7) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+   1:7>"VetClinic.UI1.csproj" projesinde "BuildOnlySettings" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets" dosyasındaki "GetFrameworkPaths" hedefi ("PrepareForBuild" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "GetFrameworkPaths" hedefini oluşturma tamamlandı.
+       "GetFrameworkPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "GetReferenceAssemblyPaths" hedefi ("PrepareForBuild" hedefi buna bağımlı):
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(1255,7): message : Özellik yeniden ataması: $(TargetFrameworkDirectory)="" (önceki değer: "v4.0.30319") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (1255,7) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "GetReferenceAssemblyPaths" görevi kullanılıyor.
+       "GetReferenceAssemblyPaths" görevi
+       "GetReferenceAssemblyPaths" görevini yürütme tamamlandı.
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(1272,7): message : Özellik yeniden ataması: $(TargetFrameworkDirectory)="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\;;" (önceki değer: "v4.0.30319") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (1272,7) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(1293,7): message : Özellik yeniden ataması: $(TargetFrameworkDirectory)="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\;;;C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\" (önceki değer: "v4.0.30319") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (1293,7) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+   1:7>"VetClinic.UI1.csproj" projesinde "GetReferenceAssemblyPaths" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "PrepareForBuild" hedefi ("CoreBuild" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "FindAppConfigFile" görevi kullanılıyor.
+       "FindAppConfigFile" görevi
+         "App.config" bulundu.
+       "FindAppConfigFile" görevini yürütme tamamlandı.
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "MakeDir" görevi kullanılıyor.
+       "MakeDir" görevi
+       "MakeDir" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "PrepareForBuild" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "BeforeResolveReferences" hedefi ("ResolveReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "BeforeResolveReferences" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "IgnoreJavaScriptOutputAssembly" hedefi ("AssignProjectConfiguration" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "IgnoreJavaScriptOutputAssembly" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_SplitProjectReferencesByFileExistence" hedefi ("PrepareProjectReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "_SplitProjectReferencesByFileExistence" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_AddOutputPathToGlobalPropertiesToRemove" hedefi ("_GetProjectReferenceTargetFrameworkProperties" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "_AddOutputPathToGlobalPropertiesToRemove" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_GetProjectReferenceTargetFrameworkProperties" hedefi ("PrepareProjectReferences" hedefi buna bağımlı):
+       "MSBuild" görevi
+       "MSBuild" görevini yürütme tamamlandı.
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "SetRidAgnosticValueForProjects" görevi kullanılıyor.
+       "SetRidAgnosticValueForProjects" görevi
+       "SetRidAgnosticValueForProjects" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "_GetProjectReferenceTargetFrameworkProperties" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "PrepareProjectReferences" hedefi ("ResolveProjectReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "PrepareProjectReferences" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "ResolveProjectReferences" hedefi ("ResolveReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "ResolveProjectReferences" hedefini oluşturma tamamlandı.
+       "ResolveProjectReferences" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "GetFrameworkPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "GetReferenceAssemblyPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "PrepareForBuild" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "ResolveSDKReferences" hedefi ("ResolveAssemblyReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "ResolveSDKReferences" hedefini oluşturma tamamlandı.
+       "ResolveSDKReferences" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "ExpandSDKReferences" hedefi ("ResolveAssemblyReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "ExpandSDKReferences" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" dosyasındaki "ImplicitlyExpandNETStandardFacades" hedefi ("ResolveAssemblyReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "ImplicitlyExpandNETStandardFacades" hedefini oluşturma tamamlandı.
+       "GetFrameworkPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "GetReferenceAssemblyPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" dosyasındaki "_HandlePackageFileConflicts" hedefi ("ResolveAssemblyReferences" hedefi buna bağımlı):
+       "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\\tools\net10.0\Microsoft.NET.Build.Extensions.Tasks.dll" derlemesindeki "ResolvePackageFileConflicts" görevi kullanılıyor.
+       "ResolvePackageFileConflicts" görevi
+       "ResolvePackageFileConflicts" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "_HandlePackageFileConflicts" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "ResolveAssemblyReferences" hedefi ("ResolveReferences" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "ResolveAssemblyReference" görevi kullanılıyor.
+       "ResolveAssemblyReference" görevi
+         TargetFrameworkMoniker:
+             .NETFramework,Version=v4.8
+         TargetFrameworkMonikerDisplayName:
+             .NET Framework 4.8
+         TargetedRuntimeVersion:
+             v
+         Assemblies:
+             DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             DevExpress.Printing.v25.2.Core, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             DevExpress.Xpo.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL
+             DevExpress.XtraBars.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL
+             DevExpress.XtraEditors.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             DevExpress.XtraGrid.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL
+             DevExpress.XtraLayout.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL
+             DevExpress.XtraPrinting.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+             System
+             System.Configuration
+             System.Numerics
+             System.Runtime.Serialization
+             System.ServiceModel
+             System.Web
+             System.Web.Services
+             System.Xml.Linq
+             System.Data.DataSetExtensions
+             Microsoft.CSharp
+             System.Data
+             System.Deployment
+             System.Drawing
+             System.Net.Http
+             System.Windows.Forms
+             System.Xml
+             System.Core
+         AssemblyFiles:
+             C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\mscorlib.dll
+         CandidateAssemblyFiles:
+         TargetFrameworkDirectories:
+             C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\
+         NonCultureResourceDirectories:
+             
+         InstalledAssemblyTables:
+         IgnoreInstalledAssemblyTable:
+             False
+         SearchPaths:
+             {CandidateAssemblyFiles}
+             {HintPathFromItem}
+             {TargetFrameworkDirectory}
+             {Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}
+             {AssemblyFolders}
+             {GAC}
+             {RawFileName}
+             bin\Debug\
+         AllowedAssemblyExtensions:
+             .winmd
+             .dll
+             .exe
+         AllowedRelatedFileExtensions:
+             .pdb
+             .xml
+             .pri
+             .dll.config
+             .exe.config
+         AppConfigFile:
+             App.config
+         AutoUnify:
+             True
+         EnableCustomCulture:
+             False
+         EnableCustomCulture:
+             False
+         CopyLocalDependenciesWhenParentReferenceInGac:
+             True
+         FindDependencies:
+             True
+         TargetProcessorArchitecture:
+             msil
+         StateFile:
+             obj\Debug\VetClinic.UI1.csproj.AssemblyReference.cache
+         InstalledAssemblySubsetTables:
+         IgnoreInstalledAssemblySubsetTable:
+             False
+         TargetFrameworkSubsets:
+         FullTargetFrameworkSubsetNames:
+             Full
+         ProfileName:
+             
+         FullFrameworkFolders:
+             C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\
+         LatestTargetFrameworkDirectories:
+         ProfileTablesLocation:
+         Birincil başvuru: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\mscorlib.dll".
+             Başvuru, "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\mscorlib.dll" arama yolu konumunda bulundu.
+             Frameworks dizininde olduğundan bu başvuru "CopyLocal" değildir.
+         Birincil başvuru: "DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Data.Desktop.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Data.Desktop.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Data.Desktop.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Data.Desktop.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Data.Desktop.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Data.Desktop.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.Data.Desktop.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Data.Desktop.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Data.Desktop.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.Data.Desktop.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Data.Desktop.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Data.Desktop.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Data.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Data.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Data.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Data.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Data.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Data.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.Data.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Data.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Data.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.Data.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Data.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Data.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Drawing.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Drawing.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Drawing.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Drawing.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Drawing.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Drawing.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.Drawing.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Drawing.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Drawing.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.Drawing.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Drawing.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Drawing.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.Printing.v25.2.Core, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Printing.v25.2.Core, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Printing.v25.2.Core.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Printing.v25.2.Core.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Printing.v25.2.Core.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Printing.v25.2.Core.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Printing.v25.2.Core.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Printing.v25.2.Core.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.Printing.v25.2.Core.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Printing.v25.2.Core.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Printing.v25.2.Core.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.Printing.v25.2.Core, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.Printing.v25.2.Core.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Printing.v25.2.Core.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Printing.v25.2.Core.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Utils.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Utils.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Utils.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Utils.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Utils.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Utils.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.Utils.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Utils.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Utils.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.Utils.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Utils.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Utils.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.Xpo.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Xpo.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Xpo.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Xpo.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.Xpo.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Xpo.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Xpo.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.Xpo.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.Xpo.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Xpo.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.Xpo.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.Xpo.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.Xpo.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Xpo.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.Xpo.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.XtraBars.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraBars.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraBars.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraBars.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraBars.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraBars.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraBars.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraBars.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.XtraBars.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraBars.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraBars.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.XtraBars.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.XtraBars.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraBars.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraBars.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.XtraEditors.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraEditors.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraEditors.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraEditors.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraEditors.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraEditors.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraEditors.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraEditors.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.XtraEditors.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraEditors.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraEditors.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.XtraEditors.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.XtraEditors.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraEditors.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraEditors.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.XtraGrid.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraGrid.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraGrid.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraGrid.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraGrid.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraGrid.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraGrid.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraGrid.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.XtraGrid.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraGrid.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraGrid.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.XtraGrid.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.XtraGrid.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraGrid.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraGrid.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.XtraLayout.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraLayout.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraLayout.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraLayout.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraLayout.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraLayout.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraLayout.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraLayout.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.XtraLayout.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraLayout.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraLayout.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.XtraLayout.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.XtraLayout.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraLayout.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraLayout.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "DevExpress.XtraPrinting.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a".
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraPrinting.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraPrinting.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraPrinting.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DevExpress.XtraPrinting.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraPrinting.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraPrinting.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DevExpress.XtraPrinting.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" için.
+                 AssemblyFoldersEx konumları dikkate alındı.
+                 SearchPath "{GAC}" için.
+                 "{GAC}\DevExpress.XtraPrinting.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraPrinting.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "{GAC}\DevExpress.XtraPrinting.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "{RawFileName}" için.
+                 "DevExpress.XtraPrinting.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" öğesini bir dosya adı olarak kabul etme denendi, ancak böyle bir öğe yoktu.
+                 SearchPath "bin\Debug\" için.
+                 "bin\Debug\DevExpress.XtraPrinting.v25.2.winmd" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraPrinting.v25.2.dll" denendi, ancak böyle bir öğe yoktu.
+                 "bin\Debug\DevExpress.XtraPrinting.v25.2.exe" denendi, ancak böyle bir öğe yoktu.
+         Birincil başvuru: "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Configuration.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Configuration.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Numerics.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Numerics.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Runtime.Serialization.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Runtime.Serialization.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.ServiceModel.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.ServiceModel.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Services.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Services.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Microsoft.CSharp.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Microsoft.CSharp.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Deployment.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Deployment.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Net.Http.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Net.Http.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+         Birincil başvuru: "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Çözümlenmiş dosya yolu: "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Core.dll".
+             Başvuru, "{TargetFrameworkDirectory}" arama yolu konumunda bulundu.
+                 SearchPath "{TargetFrameworkDirectory}" için.
+                 "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Core.winmd" denendi, ancak böyle bir öğe yoktu.
+             Bu başvuru bir önkoşul dosyası olduğundan "CopyLocal" değildir.
+       "ResolveAssemblyReference" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "ResolveAssemblyReferences" hedefini oluşturma tamamlandı.
+       "ResolveAssemblyReferences" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" dosyasındaki "_RemoveZipFileSuggestedRedirect" hedefi ("GenerateBindingRedirects" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "_RemoveZipFileSuggestedRedirect" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "GenerateBindingRedirectsUpdateAppConfig" hedefi ("ResolveReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "GenerateBindingRedirectsUpdateAppConfig" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "AfterResolveReferences" hedefi ("ResolveReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "AfterResolveReferences" hedefini oluşturma tamamlandı.
+       "GetReferenceAssemblyPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.NETFramework.CurrentVersion.targets" dosyasındaki "ImplicitlyExpandDesignTimeFacades" hedefi ("ResolveReferences" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "ImplicitlyExpandDesignTimeFacades" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "ResolveReferences" hedefi ("CoreBuild" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "ResolveReferences" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Roslyn\Microsoft.Managed.Core.targets" dosyasındaki "CopyAdditionalFiles" hedefi ("AssignTargetPaths" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "CopyAdditionalFiles" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "AssignTargetPaths" hedefi ("PrepareResourceNames" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "AssignTargetPath" görevi kullanılıyor.
+       "AssignTargetPath" görevi
+       "AssignTargetPath" görevini yürütme tamamlandı.
+       "AssignTargetPath" görevi
+       "AssignTargetPath" görevini yürütme tamamlandı.
+       "AssignTargetPath" görevi
+       "AssignTargetPath" görevini yürütme tamamlandı.
+       "AssignTargetPath" görevi
+       "AssignTargetPath" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "AssignTargetPaths" hedefini oluşturma tamamlandı.
+       "AssignTargetPaths" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "SplitResourcesByCulture" hedefi ("PrepareResourceNames" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "AssignCulture" görevi kullanılıyor.
+       "AssignCulture" görevi
+         "" kültürü "FrmHastaDetay.resx" dosyasına atandı.
+         "" kültürü "LoginForm.resx" dosyasına atandı.
+         "" kültürü "MainForm.resx" dosyasına atandı.
+         "" kültürü "Properties\Resources.resx" dosyasına atandı.
+         "" kültürü "RegisterForm.resx" dosyasına atandı.
+       "AssignCulture" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "SplitResourcesByCulture" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.CSharp.CurrentVersion.targets" dosyasındaki "CreateManifestResourceNames" hedefi ("PrepareResourceNames" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "CreateCSharpManifestResourceName" görevi kullanılıyor.
+       "CreateCSharpManifestResourceName" görevi
+         Kök ad alanı: 'VetClinic.UI1'.
+         'FrmHastaDetay.resx' kaynak dosyası 'FrmHastaDetay.cs' öğesine bağımlıdır.
+         'FrmHastaDetay.resx' kaynak dosyası, 'VetClinic.UI1.FrmHastaDetay' bildirim kaynağı adını alıyor.
+         'LoginForm.resx' kaynak dosyası 'LoginForm.cs' öğesine bağımlıdır.
+         'LoginForm.resx' kaynak dosyası, 'VetClinic.UI1.LoginForm' bildirim kaynağı adını alıyor.
+         'MainForm.resx' kaynak dosyası 'MainForm.cs' öğesine bağımlıdır.
+         'MainForm.resx' kaynak dosyası, 'VetClinic.UI1.MainForm' bildirim kaynağı adını alıyor.
+         'Properties\Resources.resx' kaynak dosyası herhangi bir başka dosyaya bağımlı değildir.
+         'Properties\Resources.resx' kaynak dosyası, 'VetClinic.UI1.Properties.Resources' bildirim kaynağı adını alıyor.
+         'RegisterForm.resx' kaynak dosyası 'RegisterForm.cs' öğesine bağımlıdır.
+         'RegisterForm.resx' kaynak dosyası, 'VetClinic.UI1.RegisterForm' bildirim kaynağı adını alıyor.
+       "CreateCSharpManifestResourceName" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "CreateManifestResourceNames" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "CreateCustomManifestResourceNames" hedefi ("PrepareResourceNames" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "CreateCustomManifestResourceNames" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "PrepareResourceNames" hedefi ("PrepareResources" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "PrepareResourceNames" hedefini oluşturma tamamlandı.
+       "ResolveAssemblyReferences" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+       "SplitResourcesByCulture" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "BeforeResGen" hedefi ("ResGen" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "BeforeResGen" hedefini oluşturma tamamlandı.
+       "ResolveReferences" hedefi atlandı. Önceden başarılı bir şekilde derlenmişti.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "FindReferenceAssembliesForReferences" hedefi ("CoreResGen" hedefi buna bağımlı):
+   1:7>"VetClinic.UI1.csproj" projesinde "FindReferenceAssembliesForReferences" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "CoreResGen" hedefi ("ResGen" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "GenerateResource" görevi kullanılıyor.
+       "GenerateResource" görevi
+         İstenilen konum 'C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Build.Tasks.Core.dll' iken görev derlemesi 'C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Build.dll'dan yüklendi.
+         Çalışma zamanı "NET" ve işlem mimarisi "x86" olan harici bir görev ana bilgisayarındaki "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesinden "GenerateResource" görevi başlatılıyor.
+     0>Düğüm 73 yeniden kullanılıyor (PID: 5548).
+   1:7>CoreResGen:
+         "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" giriş dosyası, "obj\Debug\VetClinic.UI1.MainForm.resources" çıkış dosyasından daha yeni.
+         "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" giriş dosyası, "obj\Debug\VetClinic.UI1.Properties.Resources.resources" çıkış dosyasından daha yeni.
+         resgen.exe /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Microsoft.CSharp.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\mscorlib.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Configuration.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Deployment.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Net.Http.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Numerics.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Runtime.Serialization.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.ServiceModel.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Services.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.dll" /compile MainForm.resx,obj\Debug\VetClinic.UI1.MainForm.resources Properties\Resources.resx,obj\Debug\VetClinic.UI1.Properties.Resources.resources
+         "MainForm.resx" kaynak dosyası "obj\Debug\VetClinic.UI1.MainForm.resources" konumuna yönelik olarak işleniyor.
+         "3" kaynak dosyası "MainForm.resx" konumuna yönelik olarak işleniyor.
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3823: Dize olmayan kaynaklar için GenerateResourceUsePreserializedResources özelliğinin true olarak ayarlanması gerekiyor. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3822: Dize olmayan kaynaklar için çalışma zamanında System.Resources.Extensions bütünleştirilmiş kodu gerekiyor, ancak bu projenin başvurularında bulunamadı. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\VetClinic.UI1.MainForm.resources" çıkış dosyası bozuk olabilir ve silinip yeniden oluşturulacak.
+         "Properties\Resources.resx" kaynak dosyası "obj\Debug\VetClinic.UI1.Properties.Resources.resources" konumuna yönelik olarak işleniyor.
+         "11" kaynak dosyası "Properties\Resources.resx" konumuna yönelik olarak işleniyor.
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3823: Dize olmayan kaynaklar için GenerateResourceUsePreserializedResources özelliğinin true olarak ayarlanması gerekiyor. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+   1:7>C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3822: Dize olmayan kaynaklar için çalışma zamanında System.Resources.Extensions bütünleştirilmiş kodu gerekiyor, ancak bu projenin başvurularında bulunamadı. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\VetClinic.UI1.Properties.Resources.resources" çıkış dosyası bozuk olabilir ve silinip yeniden oluşturulacak.
+       "GenerateResource" görevini yürütme tamamlandı -- BAŞARISIZ OLDU.
+   1:7>"VetClinic.UI1.csproj" projesinde "CoreResGen" hedefini oluşturma tamamlandı -- BAŞARISIZ OLDU.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_CheckForCompileOutputs" hedefi ("_CleanGetCurrentAndPriorFileWrites" hedefi buna bağımlı):
+       C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(5576,7): message : Özellik yeniden ataması: $(_DebugSymbolsProduced)="false" (önceki değer: "true") konum: C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets (5576,7) [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+   1:7>"VetClinic.UI1.csproj" projesinde "_CheckForCompileOutputs" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_CleanGetCurrentAndPriorFileWrites" hedefi ("_CleanRecordFileWrites" hedefi buna bağımlı):
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "ReadLinesFromFile" görevi kullanılıyor.
+       "ReadLinesFromFile" görevi
+       "ReadLinesFromFile" görevini yürütme tamamlandı.
+       "ConvertToAbsolutePath" görevi
+       "ConvertToAbsolutePath" görevini yürütme tamamlandı.
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "FindUnderPath" görevi kullanılıyor.
+       "FindUnderPath" görevi
+         Karşılaştırma yolu: "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1".
+       "FindUnderPath" görevini yürütme tamamlandı.
+       "FindUnderPath" görevi
+         Karşılaştırma yolu: "bin\Debug\".
+       "FindUnderPath" görevini yürütme tamamlandı.
+       "FindUnderPath" görevi
+         Karşılaştırma yolu: "obj\Debug\".
+       "FindUnderPath" görevini yürütme tamamlandı.
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "_CleanGetCurrentAndPriorFileWrites" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" projesinin "C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets" dosyasındaki "_CleanRecordFileWrites" hedefi ("CoreBuild" hedefi buna bağımlı):
+       "RemoveDuplicates" görevi
+       "RemoveDuplicates" görevini yürütme tamamlandı.
+       "MakeDir" görevi
+       "MakeDir" görevini yürütme tamamlandı.
+       "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" derlemesindeki "WriteLinesToFile" görevi kullanılıyor.
+       "WriteLinesToFile" görevi
+         İçerik değişmeyeceğinden "obj\Debug\VetClinic.UI1.csproj.FileListAbsolute.txt" dosyası üzerine yazma işlemi atlanacak.
+       "WriteLinesToFile" görevini yürütme tamamlandı.
+   1:7>"VetClinic.UI1.csproj" projesinde "_CleanRecordFileWrites" hedefini oluşturma tamamlandı.
+   1:7>"C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler) -- BAŞARISIZ OLDU.
+
+Oluşturma BAŞARISIZ OLDU.
+
+       "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (varsayılan hedef) (1:7) ->
+       (ResolveAssemblyReferences hedefi) -> 
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Printing.v25.2.Core, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.Xpo.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraBars.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraEditors.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraGrid.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraLayout.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(2437,5): warning MSB3245: Bu başvuru çözümlenemedi. "DevExpress.XtraPrinting.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" bütünleştirilmiş kodu bulunamadı. Bütünleştirilmiş kodun diskte mevcut olduğundan emin olun. Bu başvuru kodunuz için gerekliyse, derleme hatalarıyla karşılaşabilirsiniz. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+
+
+       "C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj" (varsayılan hedef) (1:7) ->
+       (CoreResGen hedefi) -> 
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3823: Dize olmayan kaynaklar için GenerateResourceUsePreserializedResources özelliğinin true olarak ayarlanması gerekiyor. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3822: Dize olmayan kaynaklar için çalışma zamanında System.Resources.Extensions bütünleştirilmiş kodu gerekiyor, ancak bu projenin başvurularında bulunamadı. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3823: Dize olmayan kaynaklar için GenerateResourceUsePreserializedResources özelliğinin true olarak ayarlanması gerekiyor. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+         C:\Program Files\dotnet\sdk\10.0.101\Microsoft.Common.CurrentVersion.targets(3442,5): error MSB3822: Dize olmayan kaynaklar için çalışma zamanında System.Resources.Extensions bütünleştirilmiş kodu gerekiyor, ancak bu projenin başvurularında bulunamadı. [C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\VetClinic.UI1.csproj]
+
+    11 Uyarı
+    4 Hata
+
+Geçen Süre 00:00:00.83

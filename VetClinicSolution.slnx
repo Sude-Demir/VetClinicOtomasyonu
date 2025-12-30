@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="VetClinic.BLL/VetClinic.BLL.csproj" Id="b365977d-4f8a-4ebe-8f5c-f3a43b52d804" />
-  <Project Path="VetClinic.DAL/VetClinic.DAL.csproj" Id="f1d62dae-3d33-481c-8a8f-d3f4adb508b3" />
-  <Project Path="VetClinic.UI1/VetClinic.UI1.csproj" Id="711511b6-2327-4bc8-839e-fc52d23c738f" />
-</Solution>

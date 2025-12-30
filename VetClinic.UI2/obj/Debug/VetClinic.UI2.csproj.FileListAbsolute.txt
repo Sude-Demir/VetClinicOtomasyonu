@@ -1,5 +1,0 @@
-C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI2\obj\Debug\VetClinic.UI2.csproj.AssemblyReference.cache
-C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI2\obj\Debug\VetClinic.UI2.Form1.resources
-C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI2\obj\Debug\VetClinic.UI2.Properties.Resources.resources
-C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI2\obj\Debug\VetClinic.UI2.csproj.GenerateResource.cache
-C:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI2\obj\Debug\VetClinic.UI2.csproj.CoreCompileInputs.cache
