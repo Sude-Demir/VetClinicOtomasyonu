@@ -169,5 +169,21 @@ namespace VetClinic.UI1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap vet_login_bg {
+            get {
+                object obj = ResourceManager.GetObject("vet_login_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap su_vet_bg_v3 {
+            get {
+                object obj = ResourceManager.GetObject("su_vet_bg_v3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

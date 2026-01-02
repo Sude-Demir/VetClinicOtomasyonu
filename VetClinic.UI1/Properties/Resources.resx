@@ -151,4 +151,10 @@
   <data name="Gemini_Generated_Image_11mrp311mrp311mr1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_11mrp311mrp311mr1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vet_login_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vet_login_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="su_vet_bg_v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\su_vet_bg_v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

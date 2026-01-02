@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B365977D-4F8A-4EBE-8F5C-F3A43B52D804}|VetClinic.BLL\\VetClinic.BLL.csproj|c:\\users\\yakup\\source\\repos\\vetclinicsolution\\vetclinic.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B365977D-4F8A-4EBE-8F5C-F3A43B52D804}|VetClinic.BLL\\VetClinic.BLL.csproj|solutionrelative:vetclinic.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\VetClinic.BLL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VetClinic.BLL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1D62DAE-3D33-481C-8A8F-D3F4ADB508B3}|VetClinic.DAL\\VetClinic.DAL.csproj|c:\\users\\yakup\\source\\repos\\vetclinicsolution\\vetclinic.dal\\hastastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1D62DAE-3D33-481C-8A8F-D3F4ADB508B3}|VetClinic.DAL\\VetClinic.DAL.csproj|solutionrelative:vetclinic.dal\\hastastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\VetClinic.DAL\\Hasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VetClinic.DAL\\Hasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1D62DAE-3D33-481C-8A8F-D3F4ADB508B3}|VetClinic.DAL\\VetClinic.DAL.csproj|c:\\users\\yakup\\source\\repos\\vetclinicsolution\\vetclinic.dal\\hasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1D62DAE-3D33-481C-8A8F-D3F4ADB508B3}|VetClinic.DAL\\VetClinic.DAL.csproj|solutionrelative:vetclinic.dal\\hasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\VetClinic.DAL\\HastaStore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VetClinic.DAL\\HastaStore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Hasta.cs",
               "DocumentMoniker": "C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\VetClinic.DAL\\Hasta.cs",
               "RelativeDocumentMoniker": "VetClinic.DAL\\Hasta.cs",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HastaStore.cs",
               "DocumentMoniker": "C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\VetClinic.DAL\\HastaStore.cs",
               "RelativeDocumentMoniker": "VetClinic.DAL\\HastaStore.cs",
@@ -60,10 +60,8 @@
               "RelativeDocumentMoniker": "VetClinic.BLL\\Class1.cs",
               "ToolTip": "C:\\Users\\yakup\\source\\repos\\VetClinicSolution\\VetClinic.BLL\\Class1.cs",
               "RelativeToolTip": "VetClinic.BLL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T09:38:18.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T09:38:18.452Z"
             }
           ]
         }

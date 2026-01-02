@@ -19,6 +19,8 @@ namespace VetClinic.UI1
         {
             this.components = new System.ComponentModel.Container();
             this.accMenu = new DevExpress.XtraBars.Navigation.AccordionControl();
+            this.accordionControlElementRandevu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElementSistem = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElementAnasayfa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -55,27 +57,31 @@ namespace VetClinic.UI1
             ((System.ComponentModel.ISupportInitialize)(this.cmbCinsiyet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTur.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // accMenu
-            // 
+            this.accMenu.AllowItemSelection = true;
+            this.accMenu.Appearance.AccordionControl.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accMenu.Appearance.AccordionControl.Options.UseFont = true;
+            this.accMenu.Appearance.Item.Hovered.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.accMenu.Appearance.Item.Hovered.Options.UseFont = true;
+            this.accMenu.Appearance.Item.Normal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accMenu.Appearance.Item.Normal.Options.UseFont = true;
+            this.accMenu.Appearance.Item.Pressed.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.accMenu.Appearance.Item.Pressed.Options.UseFont = true;
             this.accMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.accMenu.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElementAnasayfa,
             this.accordionControlElement2,
-            this.accordionControlElement6,
-            this.accordionControlElement9,
-            this.accCikis});
+            this.accordionControlElementRandevu,
+            this.accordionControlElementSistem});
             this.accMenu.Location = new System.Drawing.Point(0, 0);
             this.accMenu.Name = "accMenu";
+            this.accMenu.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
             this.accMenu.Size = new System.Drawing.Size(260, 600);
             this.accMenu.TabIndex = 0;
+            this.accMenu.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.accMenu.Click += new System.EventHandler(this.accMenu_Click);
-            // 
-            // accordionControlElementAnasayfa
-            // 
             this.accordionControlElementAnasayfa.Name = "accordionControlElementAnasayfa";
             this.accordionControlElementAnasayfa.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElementAnasayfa.Text = "Anasayfa";
+            this.accordionControlElementAnasayfa.Text = "🏠 ANASAYFA";
             this.accordionControlElementAnasayfa.Click += new System.EventHandler(this.accordionControlElementAnasayfa_Click);
             // 
             // accordionControlElement2
@@ -83,12 +89,15 @@ namespace VetClinic.UI1
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement3,
             this.accordionControlElement8});
+            this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Text = "Hasta İşlemleri";
+            this.accordionControlElement2.Text = "📋 HASTA İŞLEMLERİ";
             this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click);
             // 
             // accordionControlElement3
             // 
+            this.accordionControlElement3.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accordionControlElement3.Appearance.Normal.Options.UseFont = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement3.Text = "Hasta Ekle";
@@ -96,13 +105,26 @@ namespace VetClinic.UI1
             // 
             // accordionControlElement8
             // 
+            this.accordionControlElement8.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accordionControlElement8.Appearance.Normal.Options.UseFont = true;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement8.Text = "Hasta Listesi";
             this.accordionControlElement8.Click += new System.EventHandler(this.accordionControlElement8_Click);
             // 
+            // accordionControlElementRandevu
+            // 
+            this.accordionControlElementRandevu.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement6,
+            this.accordionControlElement9});
+            this.accordionControlElementRandevu.Expanded = true;
+            this.accordionControlElementRandevu.Name = "accordionControlElementRandevu";
+            this.accordionControlElementRandevu.Text = "📅 RANDEVU İŞLEMLERİ";
+            // 
             // accordionControlElement6
             // 
+            this.accordionControlElement6.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accordionControlElement6.Appearance.Normal.Options.UseFont = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement6.Text = "Randevu Oluştur";
@@ -110,13 +132,25 @@ namespace VetClinic.UI1
             // 
             // accordionControlElement9
             // 
+            this.accordionControlElement9.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accordionControlElement9.Appearance.Normal.Options.UseFont = true;
             this.accordionControlElement9.Name = "accordionControlElement9";
             this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement9.Text = "Randevu Listesi";
             this.accordionControlElement9.Click += new System.EventHandler(this.accordionControlElement9_Click);
             // 
+            // accordionControlElementSistem
+            // 
+            this.accordionControlElementSistem.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accCikis});
+            this.accordionControlElementSistem.Expanded = true;
+            this.accordionControlElementSistem.Name = "accordionControlElementSistem";
+            this.accordionControlElementSistem.Text = "⚙️ SİSTEM";
+            // 
             // accCikis
             // 
+            this.accCikis.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accCikis.Appearance.Normal.Options.UseFont = true;
             this.accCikis.Name = "accCikis";
             this.accCikis.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accCikis.Text = "Çıkış";
@@ -290,6 +324,8 @@ namespace VetClinic.UI1
         #endregion
 
         private DevExpress.XtraBars.Navigation.AccordionControl accMenu;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElementRandevu;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElementSistem;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElementAnasayfa;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
