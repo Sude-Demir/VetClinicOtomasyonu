@@ -1,0 +1,9 @@
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.csproj.AssemblyReference.cache
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.FrmHastaDetay.resources
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.LoginForm.resources
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.MainForm.resources
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.Properties.Resources.resources
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.RegisterForm.resources
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.csproj.GenerateResource.cache
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\yakup\source\repos\VetClinicSolution\VetClinic.UI1\obj\Debug\net10.0-windows\VetClinic.UI1.csproj.CoreCompileInputs.cache
