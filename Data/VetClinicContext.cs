@@ -22,8 +22,75 @@ namespace VetClinic.UI1.Data
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
         }
 
+        public void InitializeDatabase(VetClinicContext context)
+        {
+            try
+            {
+                context.Database.EnsureCreated();
+                
+                using (var command = context.Database.GetDbConnection().CreateCommand())
+                {
+                    bool wasOpen = context.Database.GetDbConnection().State == System.Data.ConnectionState.Open;
+                    if (!wasOpen) context.Database.GetDbConnection().Open();
+                    
+                    try
+                    {
+                        command.CommandText = "PRAGMA table_info(Kullanicilar);";
+                        bool columnExists = false;
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader["name"].ToString().Equals("HayvanResimYolu", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    columnExists = true;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (!columnExists)
+                        {
+                            command.CommandText = "ALTER TABLE Kullanicilar ADD COLUMN HayvanResimYolu TEXT;";
+                            command.ExecuteNonQuery();
+                        }
+
+                        // Hastalar tablosuna ResimYolu kolonu ekle
+                        command.CommandText = "PRAGMA table_info(Hastalar);";
+                        bool hastaResimExists = false;
+                        using (var reader2 = command.ExecuteReader())
+                        {
+                            while (reader2.Read())
+                            {
+                                if (reader2["name"].ToString().Equals("ResimYolu", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    hastaResimExists = true;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (!hastaResimExists)
+                        {
+                            command.CommandText = "ALTER TABLE Hastalar ADD COLUMN ResimYolu TEXT;";
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    finally
+                    {
+                        if (!wasOpen) context.Database.GetDbConnection().Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Database init error: " + ex.Message);
+            }
+        }
+
         public void EnsureSeeded()
         {
+            InitializeDatabase(this);
             this.Database.EnsureCreated();
 
             if (!Sorular.Any())
@@ -144,5 +211,6 @@ namespace VetClinic.UI1.Data
         public string HayvanYasi { get; set; }
         public string HayvanMikrocip { get; set; }
         public string HayvanSaglikNotu { get; set; }
+        public string HayvanResimYolu { get; set; }
     }
 }

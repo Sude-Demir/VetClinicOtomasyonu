@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VetClinic.UI1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62f9b32dbca460c9ac70f5deb3956053d89069e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40dafbde64ae722ee5bdf1273352053e3c68d357")]
 [assembly: System.Reflection.AssemblyProductAttribute("VetClinic.UI1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VetClinic.UI1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

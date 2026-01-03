@@ -17,6 +17,7 @@ namespace VetClinic.UI1
         public string HayvanYasi { get; set; }
         public string HayvanMikrocip { get; set; }
         public string HayvanSaglikNotu { get; set; }
+        public string HayvanResimYolu { get; set; }
         public bool IsAdmin { get; set; }
 
         public Kullanici() { }

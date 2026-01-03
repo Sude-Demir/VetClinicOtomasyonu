@@ -1132,7 +1132,8 @@ namespace VetClinic.UI1
                 "💳 ÖDEME BİLGİLERİM",
                 "🏢 KLİNİK BİLGİLERİ",
                 "❓ SORU & CEVAP",
-                "⭐ DOKTOR DEĞERLENDİR"
+                "⭐ DOKTOR DEĞERLENDİR",
+                "✨ AKILLI ASİSTAN"
             };
 
             int insertIndex = 1; 
@@ -1201,7 +1202,8 @@ namespace VetClinic.UI1
 
             bool isWhitePanelSection = header.Contains("KİŞİSEL") || header.Contains("HAYVANLARIM") || 
                                        header.Contains("SAĞLIK GEÇMİŞİ") || header.Contains("RANDEVULARIM") || 
-                                       header.Contains("ÖDEME BİLGİLERİM") || header.Contains("DEĞERLENDİR");
+                                       header.Contains("ÖDEME BİLGİLERİM") || header.Contains("DEĞERLENDİR") ||
+                                       header.Contains("AKILLI ASİSTAN");
 
             // RANDEVU OLUŞTUR için özel işlem
             if (header.Contains("RANDEVU OLUŞTUR"))
@@ -1230,7 +1232,10 @@ namespace VetClinic.UI1
                 
                 // Yükseklik tam sığacak şekilde azaltıldı (boşluklar kesildi)
                 int pnlW = header.Contains("DEĞERLENDİR") ? 660 : 700;
-                int pnlH = header.Contains("DEĞERLENDİR") ? 490 : 480;
+                int pnlH = header.Contains("DEĞERLENDİR") ? 490 : 
+                          (header.Contains("HAYVANLARIM") ? 530 : 
+                          (header.Contains("SAĞLIK GEÇMİŞİ") ? 520 : 
+                          (header.Contains("RANDEVULARIM") ? 500 : 480)));
                 pnlWhiteArea.Size = new Size(pnlW, pnlH);
                 pnlWhiteArea.BackColor = Color.FromArgb(250, 255, 255, 255); 
                 
@@ -1272,15 +1277,37 @@ namespace VetClinic.UI1
                 string[] fields;
                 if (header.Contains("KİŞİSEL"))
                     fields = new[] { "Ad Soyad:", "TC Kimlik No:", "Doğum Tarihi:", "Cinsiyet:", "Sahip Olduğu Hayvan:" };
-                else if (header.Contains("HAYVANLARIM"))
-                    fields = new[] { "Hayvan Adı:", "Tür – Cins:", "Yaş:", "Mikroçip:", "Alerji / Kronik Hastalık:" };
                 else if (header.Contains("SAĞLIK GEÇMİŞİ"))
-                    fields = new[] { "Geçmiş Aşılar:", "Uygulanan Tedaviler:", "Klinik Notlar:", "Son Kontrol Tarihi:", "Sıradaki Randevu:" };
+                {
+                    BuildSaglikGecmisiUI(pnlWhiteArea, currentUser);
+                    panelContent.Controls.Add(customerPanel);
+                    customerPanel.BringToFront();
+                    return;
+                }
                 else if (header.Contains("RANDEVULARIM"))
-                    fields = new[] { "Aktif Randevu:", "Geçmiş Randevu 1:", "Geçmiş Randevu 2:", "İptal Edilenler:", "Kurum Mesajı:" };
+                {
+                    BuildRandevularimUI(pnlWhiteArea);
+                    panelContent.Controls.Add(customerPanel);
+                    customerPanel.BringToFront();
+                    return;
+                }
                 else if (header.Contains("DEĞERLENDİR"))
                 {
                     BuildDoktorDegerlendirmeUI(pnlWhiteArea);
+                    panelContent.Controls.Add(customerPanel);
+                    customerPanel.BringToFront();
+                    return;
+                }
+                else if (header.Contains("AKILLI ASİSTAN"))
+                {
+                    BuildAkilliAsistanUI(pnlWhiteArea, currentUser);
+                    panelContent.Controls.Add(customerPanel);
+                    customerPanel.BringToFront();
+                    return;
+                }
+                else if (header.Contains("HAYVANLARIM"))
+                {
+                    BuildHayvanlarimUI(pnlWhiteArea, currentUser, tumKullanicilar);
                     panelContent.Controls.Add(customerPanel);
                     customerPanel.BringToFront();
                     return;
@@ -1374,14 +1401,6 @@ namespace VetClinic.UI1
                             else if (field.Contains("Cinsiyet")) inputControl.Text = currentUser.Cinsiyet;
                             else if (field.Contains("Hayvan")) inputControl.Text = currentUser.SahipOlduguHayvan;
                         }
-                        else if (header.Contains("HAYVANLARIM"))
-                        {
-                            if (field.Contains("Hayvan Adı")) inputControl.Text = currentUser.HayvanAdi;
-                            else if (field.Contains("Tür")) inputControl.Text = currentUser.HayvanTurCins;
-                            else if (field.Contains("Yaş")) inputControl.Text = currentUser.HayvanYasi;
-                            else if (field.Contains("Mikroçip")) inputControl.Text = currentUser.HayvanMikrocip;
-                            else if (field.Contains("Alerji")) inputControl.Text = currentUser.HayvanSaglikNotu;
-                        }
                         else if (header.Contains("SAĞLIK GEÇMİŞİ"))
                         {
                             inputControl.Enabled = false;
@@ -1398,13 +1417,29 @@ namespace VetClinic.UI1
                             inputControl.BackColor = Color.White;
                             
                             // Giriş yapan kullanıcının e-postasına göre filtrele
-                            string currentEmail = LoginForm.GirisYapanKullanici;
+                            string currentEmail = LoginForm.GirisYapanKullanici?.ToLower() ?? "";
 
-                            // Dinamik randevu verilerini RandevuListesi'nden çek ve filtrele
-                            var userRandevular = FrmRandevu.RandevuListesi
-                                .Where(r => r.HastaSoyad != null && r.HastaSoyad.Equals(currentEmail, StringComparison.OrdinalIgnoreCase))
-                                .OrderByDescending(r => r.RandevuTarihi)
-                                .ToList();
+                            // Veritabanından direkt çek - her zaman güncel
+                            List<Randevu> userRandevular = new List<Randevu>();
+                            try {
+                                using (var db = new VetClinic.UI1.Data.VetClinicContext())
+                                {
+                                    userRandevular = db.Randevular
+                                        .Where(r => r.HastaSoyad != null && r.HastaSoyad.ToLower() == currentEmail)
+                                        .OrderByDescending(r => r.RandevuTarihi)
+                                        .Select(r => new Randevu {
+                                            Id = r.Id,
+                                            Tur = r.Tur,
+                                            Durum = r.Durum,
+                                            HastaAd = r.HastaAd,
+                                            HastaSoyad = r.HastaSoyad,
+                                            RandevuTarihi = r.RandevuTarihi,
+                                            Aciklama = r.Aciklama,
+                                            Hekim = r.Hekim
+                                        })
+                                        .ToList();
+                                }
+                            } catch { }
 
                             var aktifRandevular = userRandevular
                                 .Where(r => r.Durum != "İptal Edildi" && r.Durum != "Tamamlandı")
@@ -1532,7 +1567,493 @@ namespace VetClinic.UI1
             customerPanel.BringToFront();
         }
 
+        private void BuildAkilliAsistanUI(Panel parent, Kullanici pet)
+        {
+            int currentY = 80;
+            int x = 45;
+
+            var lblIntro = new Label {
+                Text = "🤖 Yapay Zeka Destekli Sağlık Raporu",
+                Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold),
+                ForeColor = Color.DarkSlateBlue,
+                Location = new Point(x, currentY),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblIntro);
+
+            // --- HASTA FOTOĞRAFI (AKILLI ASİSTAN) ---
+            if (!string.IsNullOrEmpty(pet.HayvanResimYolu) && System.IO.File.Exists(pet.HayvanResimYolu)) {
+                PictureBox picPetAsistan = new PictureBox {
+                    Size = new Size(80, 80),
+                    Location = new Point(parent.Width - 120, currentY - 10),
+                    SizeMode = PictureBoxSizeMode.Zoom,
+                    BackColor = Color.Transparent,
+                    Image = Image.FromFile(pet.HayvanResimYolu)
+                };
+                parent.Controls.Add(picPetAsistan);
+            }
+
+            currentY += 45;
+
+            if (pet == null || string.IsNullOrEmpty(pet.HayvanAdi) || pet.HayvanAdi == "Bilinmiyor") {
+                var lblWarning = new Label {
+                    Text = "⚠️ Rapor oluşturabilmek için lütfen önce 'HAYVANLARIM' sekmesinden hayvan bilgilerinizi güncelleyiniz.",
+                    Font = new Font("Segoe UI", 11F, FontStyle.Italic),
+                    ForeColor = Color.Red,
+                    Location = new Point(x, currentY),
+                    Size = new Size(580, 200),
+                    TextAlign = ContentAlignment.TopLeft
+                };
+                parent.Controls.Add(lblWarning);
+                return;
+            }
+
+            // --- AKILLI ALGORİTMA MANTIĞI ---
+            string riskMesaji = "Belirgin bir genetik risk tespit edilmedi.";
+            string beslenmeOnerisi = "Dengeli bir ticari mama ile beslenmesi önerilir.";
+            int gunlukKalori = 0;
+            
+            // 1. Kalori Hesaplama
+            int petYasi = 1;
+            int.TryParse(pet.HayvanYasi?.Split(' ')[0], out petYasi);
+            if (petYasi == 0) petYasi = 1;
+
+            if (pet.HayvanTurCins != null) {
+                if (pet.HayvanTurCins.Contains("Kedi")) gunlukKalori = 200 + (petYasi * 15);
+                else if (pet.HayvanTurCins.Contains("Köpek")) gunlukKalori = 400 + (petYasi * 30);
+                else gunlukKalori = 100;
+            }
+
+            // 2. Karar Verme (Cins Bazlı Risk Analizi)
+            if (pet.HayvanTurCins != null) {
+                if (pet.HayvanTurCins.Contains("British") || pet.HayvanTurCins.Contains("Scottish")) {
+                    riskMesaji = "❗ Kalp (HCM) ve Eklem (Osteokondrodizplazi) sorunlarına yatkınlık mevcuttur. Yıllık eko önerilir.";
+                    beslenmeOnerisi = "Düşük sodyumlu ve eklem destekli (Glukozamin) mamalar tercih edilmelidir.";
+                }
+                else if (pet.HayvanTurCins.Contains("Golden") || pet.HayvanTurCins.Contains("Alman Kurdu")) {
+                    riskMesaji = "❗ Kalça displazisi ve dirsek uyumsuzluğu riski yüksektir. Aşırı egzersizden kaçınılmalıdır.";
+                    beslenmeOnerisi = "Kilo kontrolü kritik önemdedir. L-Karnitin içeren mamalar faydalı olabilir.";
+                }
+                else if (pet.HayvanTurCins.Contains("Tekir")) {
+                    riskMesaji = "✅ Dayanıklı bir ırktır. İdrar yolu kristal oluşumuna karşı dikkatli olunmalıdır.";
+                    beslenmeOnerisi = "Taze su tüketimi artırılmalı, idrar asitliğini dengeleyen mamalar seçilmelidir.";
+                }
+            }
+
+            // --- UI GÖSTERİMİ ---
+            var pnlAnalysis = new Panel {
+                Size = new Size(580, 260),
+                Location = new Point(x, currentY),
+                BackColor = Color.FromArgb(245, 245, 255),
+                Padding = new Padding(15)
+            };
+            parent.Controls.Add(pnlAnalysis);
+
+            int py = 15;
+            Action<string, string, Color> addRow = (title, val, col) => {
+                var lbt = new Label { Text = title, Font = new Font("Segoe UI", 10F, FontStyle.Bold), ForeColor = Color.DimGray, Location = new Point(15, py), AutoSize = true };
+                var lbv = new Label { Text = val, Font = new Font("Segoe UI", 10F), ForeColor = col, Location = new Point(150, py), Size = new Size(400, 45), TextAlign = ContentAlignment.TopLeft };
+                pnlAnalysis.Controls.Add(lbt);
+                pnlAnalysis.Controls.Add(lbv);
+                py += 55;
+            };
+
+            addRow("HASTA:", pet.HayvanAdi + " (" + pet.HayvanTurCins + ")", Color.Black);
+            addRow("GÜNLÜK İHTİYAÇ:", gunlukKalori + " kcal (Tahmini)", Color.DarkBlue);
+            addRow("RİSK ANALİZİ:", riskMesaji, Color.Firebrick);
+            addRow("BESLENME PLANI:", beslenmeOnerisi, Color.DarkGreen);
+
+            currentY += 280;
+            var lblNote = new Label {
+                Text = "* Bu rapor bir 'Uzman Sistem' algoritması tarafından oluşturulmuştur. Kesin teşhis için veteriner hekiminize danışınız.",
+                Font = new Font("Segoe UI", 8F, FontStyle.Italic),
+                ForeColor = Color.Gray,
+                Location = new Point(x, currentY),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblNote);
+        }
+
+        private void BuildSaglikGecmisiUI(Panel parent, Kullanici pet)
+        {
+            int currentY = 80;
+            int x = 45;
+
+            // --- BAŞLIK VE PET BİLGİSİ ---
+            var lblTitle = new Label {
+                Text = "🏥 SAĞLIK GEÇMİŞİ",
+                Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold),
+                ForeColor = Color.ForestGreen,
+                Location = new Point(x, currentY),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblTitle);
+
+            // Null check
+            if (pet == null) {
+                var lblError = new Label {
+                    Text = "⚠️ Kullanıcı bilgisi yüklenemedi.",
+                    Font = new Font("Segoe UI", 11F, FontStyle.Italic),
+                    ForeColor = Color.Red,
+                    Location = new Point(x, currentY + 50),
+                    AutoSize = true
+                };
+                parent.Controls.Add(lblError);
+                return;
+            }
+
+            // Pet fotoğrafı ve ismi (sağ üst köşe)
+            try {
+                if (!string.IsNullOrEmpty(pet.HayvanResimYolu) && System.IO.File.Exists(pet.HayvanResimYolu)) {
+                    PictureBox picPetHealth = new PictureBox {
+                        Size = new Size(70, 70),
+                        Location = new Point(parent.Width - 150, currentY - 5),
+                        SizeMode = PictureBoxSizeMode.Zoom,
+                        BackColor = Color.Transparent,
+                        Image = Image.FromFile(pet.HayvanResimYolu)
+                    };
+                    parent.Controls.Add(picPetHealth);
+                }
+            } catch { }
+
+            Label lblPetName = new Label {
+                Text = pet.HayvanAdi ?? "Bilgi Yok",
+                Font = new Font("Segoe UI", 11F, FontStyle.Bold),
+                ForeColor = Color.DarkSlateGray,
+                Location = new Point(parent.Width - 150, currentY + 75),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblPetName);
+
+            currentY += 50;
+
+            // --- TEDAVİ KAYITLARI GRİD ---
+            if (string.IsNullOrEmpty(pet.HayvanAdi) || pet.HayvanAdi == "Bilinmiyor") {
+                var lblWarning = new Label {
+                    Text = "⚠️ Sağlık geçmişini görüntülemek için lütfen önce 'HAYVANLARIM' sekmesinden hayvan bilgilerinizi güncelleyiniz.",
+                    Font = new Font("Segoe UI", 11F, FontStyle.Italic),
+                    ForeColor = Color.OrangeRed,
+                    Location = new Point(x, currentY),
+                    Size = new Size(580, 100),
+                    TextAlign = ContentAlignment.TopLeft
+                };
+                parent.Controls.Add(lblWarning);
+                return;
+            }
+
+            Label lblGridTitle = new Label {
+                Text = "📅 GEÇMİŞ TEDAVİLER VE KONTROLLER",
+                Font = new Font("Segoe UI", 10F, FontStyle.Bold),
+                ForeColor = Color.DimGray,
+                Location = new Point(x, currentY),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblGridTitle);
+            currentY += 30;
+
+            // GridControl oluştur
+            try {
+                DevExpress.XtraGrid.GridControl gridTedavi = new DevExpress.XtraGrid.GridControl();
+                gridTedavi.Location = new Point(x, currentY);
+                gridTedavi.Size = new Size(parent.Width - (2 * x), 200);
+                gridTedavi.LookAndFeel.UseDefaultLookAndFeel = false;
+                gridTedavi.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+
+                DevExpress.XtraGrid.Views.Grid.GridView viewTedavi = new DevExpress.XtraGrid.Views.Grid.GridView();
+                gridTedavi.MainView = viewTedavi;
+                gridTedavi.ViewCollection.Add(viewTedavi);
+
+                // Veriyi yükle
+                List<object> tedaviler = new List<object>();
+                try {
+                    using (var db = new VetClinicContext())
+                    {
+                        string hayvanAdiLower = pet.HayvanAdi.ToLower();
+                        tedaviler = db.Tedaviler
+                            .Where(t => t.HastaAdi != null && t.HastaAdi.ToLower() == hayvanAdiLower)
+                            .OrderByDescending(t => t.Tarih)
+                            .Select(t => new { 
+                                Tarih = t.Tarih ?? "-", 
+                                Şikayet = t.Sikayet ?? "-", 
+                                Tedavi = t.Islem ?? "-", 
+                                Veteriner = t.Hekim ?? "-"
+                            })
+                            .ToList<object>();
+                    }
+                } catch (Exception ex) {
+                    Label lblDbError = new Label {
+                        Text = "⚠️ Veritabanı bağlantı hatası: " + ex.Message,
+                        Font = new Font("Segoe UI", 9F, FontStyle.Italic),
+                        ForeColor = Color.Red,
+                        Location = new Point(x, currentY),
+                        Size = new Size(580, 60),
+                        TextAlign = ContentAlignment.TopLeft
+                    };
+                    parent.Controls.Add(lblDbError);
+                    return;
+                }
+
+                if (tedaviler.Count == 0) {
+                    // Eğer kayıt yoksa bilgilendirme göster
+                    Label lblNoRecord = new Label {
+                        Text = "📝 Henüz kayıtlı tedavi bulunmamaktadır.\n\nİlk muayeneniz sonrasında bu bölümde geçmiş tedavilerinizi görebileceksiniz.",
+                        Font = new Font("Segoe UI", 10F, FontStyle.Italic),
+                        ForeColor = Color.Gray,
+                        Location = new Point(x, currentY),
+                        Size = new Size(580, 100),
+                        TextAlign = ContentAlignment.MiddleCenter,
+                        BackColor = Color.FromArgb(250, 250, 250),
+                        BorderStyle = BorderStyle.FixedSingle
+                    };
+                    parent.Controls.Add(lblNoRecord);
+                } else {
+                    gridTedavi.DataSource = tedaviler;
+                    viewTedavi.PopulateColumns();
+                    
+                    // Kolon ayarları
+                    if (viewTedavi.Columns["Tarih"] != null) {
+                        viewTedavi.Columns["Tarih"].Caption = "TARİH";
+                        viewTedavi.Columns["Tarih"].Width = 100;
+                    }
+                    if (viewTedavi.Columns["Şikayet"] != null) {
+                        viewTedavi.Columns["Şikayet"].Caption = "ŞİKAYET/NEDEN";
+                        viewTedavi.Columns["Şikayet"].Width = 150;
+                    }
+                    if (viewTedavi.Columns["Tedavi"] != null) {
+                        viewTedavi.Columns["Tedavi"].Caption = "UYGULANAN TEDAVİ";
+                        viewTedavi.Columns["Tedavi"].Width = 200;
+                    }
+                    if (viewTedavi.Columns["Veteriner"] != null) {
+                        viewTedavi.Columns["Veteriner"].Caption = "VETERİNER HEKİM";
+                        viewTedavi.Columns["Veteriner"].Width = 150;
+                    }
+
+                    viewTedavi.OptionsView.ShowGroupPanel = false;
+                    viewTedavi.OptionsBehavior.Editable = false;
+                    viewTedavi.OptionsView.RowAutoHeight = true;
+                    
+                    parent.Controls.Add(gridTedavi);
+                }
+            } catch (Exception ex) {
+                Label lblGridError = new Label {
+                    Text = "⚠️ Tablo oluşturulurken hata: " + ex.Message,
+                    Font = new Font("Segoe UI", 9F, FontStyle.Italic),
+                    ForeColor = Color.Red,
+                    Location = new Point(x, currentY),
+                    Size = new Size(580, 60),
+                    TextAlign = ContentAlignment.TopLeft
+                };
+                parent.Controls.Add(lblGridError);
+                return;
+            }
+
+            currentY += 220;
+
+            // --- SAĞLIK NOTU (Eğer varsa) ---
+            if (!string.IsNullOrEmpty(pet.HayvanSaglikNotu)) {
+                try {
+                    Label lblHealthNote = new Label {
+                        Text = "📋 MÜŞTERİ NOTU",
+                        Font = new Font("Segoe UI", 10F, FontStyle.Bold),
+                        ForeColor = Color.DimGray,
+                        Location = new Point(x, currentY),
+                        AutoSize = true
+                    };
+                    parent.Controls.Add(lblHealthNote);
+                    currentY += 25;
+
+                    MemoEdit txtHealthNote = new MemoEdit {
+                        Text = pet.HayvanSaglikNotu,
+                        Location = new Point(x, currentY),
+                        Size = new Size(parent.Width - (2 * x), 80),
+                        Properties = { ReadOnly = true },
+                        BackColor = Color.FromArgb(250, 250, 250)
+                    };
+                    parent.Controls.Add(txtHealthNote);
+                } catch { }
+            }
+        }
+
+        private void BuildRandevularimUI(Panel parent)
+        {
+            int currentY = 70;
+            int x = 40;
+
+            // --- BAŞLIK ---
+            var lblTitle = new Label {
+                Text = "📅 RANDEVULARIM",
+                Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold),
+                ForeColor = Color.FromArgb(200, 100, 30),
+                Location = new Point(x, currentY),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblTitle);
+
+            // --- YENİ RANDEVU BUTONU ---
+            SimpleButton btnYeniRandevu = new SimpleButton {
+                Text = "➕ Yeni Randevu",
+                Size = new Size(140, 35),
+                Location = new Point(parent.Width - 180, currentY - 5),
+                Appearance = { BackColor = Color.SeaGreen, ForeColor = Color.White, Font = new Font("Segoe UI", 10F, FontStyle.Bold) },
+                ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat
+            };
+            btnYeniRandevu.Appearance.Options.UseBackColor = true;
+            btnYeniRandevu.Appearance.Options.UseForeColor = true;
+            btnYeniRandevu.Appearance.Options.UseFont = true;
+            btnYeniRandevu.Click += (s, e) => {
+                FrmRandevu frm = new FrmRandevu();
+                frm.ShowDialog();
+                // Sayfa yenilensin
+                ShowCustomerSubPanel("RANDEVULARIM");
+            };
+            parent.Controls.Add(btnYeniRandevu);
+
+            currentY += 50;
+
+            // --- RANDEVU GRİD ---
+            string currentEmail = LoginForm.GirisYapanKullanici?.ToLower() ?? "";
+            List<dynamic> randevular = new List<dynamic>();
+
+            try {
+                using (var db = new VetClinic.UI1.Data.VetClinicContext())
+                {
+                    randevular = db.Randevular
+                        .Where(r => r.HastaSoyad != null && r.HastaSoyad.ToLower() == currentEmail)
+                        .OrderByDescending(r => r.RandevuTarihi)
+                        .Select(r => new {
+                            Id = r.Id,
+                            Tarih = r.RandevuTarihi.ToString("dd.MM.yyyy"),
+                            Saat = r.RandevuTarihi.ToString("HH:mm"),
+                            Hasta = r.HastaAd ?? "-",
+                            Tip = r.Tur ?? "-",
+                            Hekim = r.Hekim ?? "-",
+                            Durum = r.Durum ?? "Beklemede"
+                        })
+                        .ToList<dynamic>();
+                }
+            } catch { }
+
+            if (randevular.Count == 0) {
+                Label lblNoRecord = new Label {
+                    Text = "📝 Henüz randevunuz bulunmamaktadır.\n\nYukarıdaki 'Yeni Randevu' butonuna tıklayarak randevu oluşturabilirsiniz.",
+                    Font = new Font("Segoe UI", 11F, FontStyle.Italic),
+                    ForeColor = Color.Gray,
+                    Location = new Point(x, currentY + 50),
+                    Size = new Size(parent.Width - 80, 100),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    BackColor = Color.FromArgb(250, 250, 250),
+                    BorderStyle = BorderStyle.FixedSingle
+                };
+                parent.Controls.Add(lblNoRecord);
+                return;
+            }
+
+            // Grid Control oluştur
+            DevExpress.XtraGrid.GridControl gridRandevu = new DevExpress.XtraGrid.GridControl();
+            gridRandevu.Location = new Point(x, currentY);
+            gridRandevu.Size = new Size(parent.Width - (2 * x), 280);
+            gridRandevu.LookAndFeel.UseDefaultLookAndFeel = false;
+            gridRandevu.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+
+            DevExpress.XtraGrid.Views.Grid.GridView viewRandevu = new DevExpress.XtraGrid.Views.Grid.GridView();
+            gridRandevu.MainView = viewRandevu;
+            gridRandevu.ViewCollection.Add(viewRandevu);
+            gridRandevu.DataSource = randevular;
+
+            viewRandevu.PopulateColumns();
+
+            // Kolon ayarları
+            if (viewRandevu.Columns["Id"] != null) viewRandevu.Columns["Id"].Visible = false;
+            if (viewRandevu.Columns["Tarih"] != null) { viewRandevu.Columns["Tarih"].Caption = "TARİH"; viewRandevu.Columns["Tarih"].Width = 80; }
+            if (viewRandevu.Columns["Saat"] != null) { viewRandevu.Columns["Saat"].Caption = "SAAT"; viewRandevu.Columns["Saat"].Width = 50; }
+            if (viewRandevu.Columns["Hasta"] != null) { viewRandevu.Columns["Hasta"].Caption = "HASTA"; viewRandevu.Columns["Hasta"].Width = 80; }
+            if (viewRandevu.Columns["Tip"] != null) { viewRandevu.Columns["Tip"].Caption = "TİP"; viewRandevu.Columns["Tip"].Width = 70; }
+            if (viewRandevu.Columns["Hekim"] != null) { viewRandevu.Columns["Hekim"].Caption = "HEKİM"; viewRandevu.Columns["Hekim"].Width = 120; }
+            if (viewRandevu.Columns["Durum"] != null) { viewRandevu.Columns["Durum"].Caption = "DURUM"; viewRandevu.Columns["Durum"].Width = 90; }
+
+            viewRandevu.OptionsView.ShowGroupPanel = false;
+            viewRandevu.OptionsBehavior.Editable = false;
+            viewRandevu.OptionsView.RowAutoHeight = true;
+
+            // Satır renklendirme - Duruma göre
+            viewRandevu.RowStyle += (s, e) => {
+                if (e.RowHandle >= 0) {
+                    object durumObj = viewRandevu.GetRowCellValue(e.RowHandle, "Durum");
+                    string durum = durumObj?.ToString() ?? "";
+                    if (durum == "Beklemede" || durum == "Onaylandı") {
+                        e.Appearance.BackColor = Color.FromArgb(230, 255, 230); // Açık yeşil
+                    } else if (durum == "İptal Edildi") {
+                        e.Appearance.BackColor = Color.FromArgb(255, 230, 230); // Açık kırmızı
+                    } else if (durum == "Tamamlandı") {
+                        e.Appearance.BackColor = Color.FromArgb(240, 240, 240); // Gri
+                    } else if (durum == "Acil") {
+                        e.Appearance.BackColor = Color.FromArgb(255, 245, 200); // Açık sarı
+                    }
+                }
+            };
+
+            parent.Controls.Add(gridRandevu);
+
+            currentY += 295;
+
+            // --- İPTAL BUTONU ---
+            SimpleButton btnIptal = new SimpleButton {
+                Text = "❌ Seçili Randevuyu İptal Et",
+                Size = new Size(200, 40),
+                Location = new Point(x, currentY),
+                Appearance = { BackColor = Color.IndianRed, ForeColor = Color.White, Font = new Font("Segoe UI", 10F, FontStyle.Bold) },
+                ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat
+            };
+            btnIptal.Appearance.Options.UseBackColor = true;
+            btnIptal.Appearance.Options.UseForeColor = true;
+            btnIptal.Appearance.Options.UseFont = true;
+            btnIptal.Click += (s, e) => {
+                int rowHandle = viewRandevu.FocusedRowHandle;
+                if (rowHandle < 0) {
+                    MessageBox.Show("Lütfen iptal etmek istediğiniz randevuyu seçin.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                
+                object idObj = viewRandevu.GetRowCellValue(rowHandle, "Id");
+                object durumObj = viewRandevu.GetRowCellValue(rowHandle, "Durum");
+                
+                if (durumObj?.ToString() == "Tamamlandı" || durumObj?.ToString() == "İptal Edildi") {
+                    MessageBox.Show("Bu randevu zaten tamamlanmış veya iptal edilmiş.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (MessageBox.Show("Bu randevuyu iptal etmek istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                    try {
+                        int randevuId = Convert.ToInt32(idObj);
+                        using (var db = new VetClinic.UI1.Data.VetClinicContext()) {
+                            var randevu = db.Randevular.FirstOrDefault(r => r.Id == randevuId);
+                            if (randevu != null) {
+                                randevu.Durum = "İptal Edildi";
+                                db.SaveChanges();
+                            }
+                        }
+                        MessageBox.Show("Randevu başarıyla iptal edildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ShowCustomerSubPanel("RANDEVULARIM"); // Sayfayı yenile
+                    } catch (Exception ex) {
+                        MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            };
+            parent.Controls.Add(btnIptal);
+
+            // --- BİLGİ MESAJI ---
+            Label lblInfo = new Label {
+                Text = "💡 Randevu durumlarınız: 🟢 Aktif   🔴 İptal   ⚪ Tamamlandı   🟡 Acil",
+                Font = new Font("Segoe UI", 9F, FontStyle.Italic),
+                ForeColor = Color.DimGray,
+                Location = new Point(x + 220, currentY + 10),
+                AutoSize = true
+            };
+            parent.Controls.Add(lblInfo);
+        }
+
         private void BuildDoktorDegerlendirmeUI(Panel parent)
+
         {
             int currentY = 80; // Üst boşluk daraltıldı
             int x = 40; // Sol boşluk hafif daraltıldı (660 genişliğe uyum)
@@ -1750,12 +2271,290 @@ namespace VetClinic.UI1
         // Dashboard Panel - Anasayfa Özet Bilgileri
         private Panel dashboardPanel;
         
+        private void BuildHayvanlarimUI(Panel parent, Kullanici pet, List<Kullanici> allUsers)
+        {
+            int currentY = 100;
+            int x = 45;
+            int inputX = 220;
+            int inputW = 380;
+
+            // --- SOL TARAF: HAYVAN İKONU / RESMİ ---
+            PictureBox picPet = new PictureBox {
+                Size = new Size(120, 120),
+                Location = new Point(inputX + inputW - 80, 70),
+                BackColor = Color.FromArgb(245, 245, 245),
+                BorderStyle = BorderStyle.FixedSingle,
+                SizeMode = PictureBoxSizeMode.Zoom,
+                Cursor = Cursors.Hand
+            };
+
+            // Mevcut resmi yükle
+            if (!string.IsNullOrEmpty(pet.HayvanResimYolu) && System.IO.File.Exists(pet.HayvanResimYolu)) {
+                try { picPet.Image = Image.FromFile(pet.HayvanResimYolu); } catch { }
+            } else {
+                // Varsayılan ikon
+                Bitmap bmp = new Bitmap(picPet.Width, picPet.Height);
+                using (Graphics g = Graphics.FromImage(bmp)) {
+                    g.Clear(Color.FromArgb(240, 240, 240));
+                    using (Font f = new Font("Segoe UI", 48F)) {
+                        g.DrawString("🐾", f, Brushes.LightGray, new PointF(15, 15));
+                    }
+                }
+                picPet.Image = bmp;
+            }
+
+            // --- RESİM SİLME BUTONU ---
+            SimpleButton btnDeletePhoto = new SimpleButton {
+                Text = "🗑️",
+                Size = new Size(30, 30),
+                Location = new Point(picPet.Right - 30, picPet.Top),
+                ToolTip = "Fotoğrafı Kaldır",
+                Appearance = { BackColor = Color.FromArgb(200, 50, 50), ForeColor = Color.White, Options = { UseBackColor = true, UseForeColor = true } },
+                ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat,
+                Visible = !string.IsNullOrEmpty(pet.HayvanResimYolu)
+            };
+
+            Action refreshDeleteButton = () => {
+                btnDeletePhoto.Visible = !string.IsNullOrEmpty(pet.HayvanResimYolu);
+            };
+
+            btnDeletePhoto.Click += (s, e) => {
+                if (MessageBox.Show("Hayvanınızın fotoğrafını kaldırmak istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                    pet.HayvanResimYolu = null;
+                    // updateBreeds fonksiyonu varsa onu çağıralım (aşağıda tanımlı), yoksa manuel sıfırlayalım
+                    // Şimdilik manuel:
+                    Bitmap bmp = new Bitmap(picPet.Width, picPet.Height);
+                    using (Graphics g = Graphics.FromImage(bmp)) {
+                        g.Clear(Color.FromArgb(240, 240, 240));
+                        using (Font f = new Font("Segoe UI", 48F)) {
+                            g.DrawString("🐾", f, Brushes.LightGray, new PointF(15, 15));
+                        }
+                    }
+                    picPet.Image = bmp;
+                    refreshDeleteButton();
+                    MessageBox.Show("Fotoğraf kaldırıldı. Kaydet butonuna basarak değişikliği kalıcı hale getirebilirsiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            };
+
+            parent.Controls.Add(btnDeletePhoto);
+            btnDeletePhoto.BringToFront();
+
+            // Resim Değiştirme Click Eventi
+            picPet.Click += (s, e) => {
+                using (OpenFileDialog ofd = new OpenFileDialog()) {
+                    ofd.Filter = "Resim Dosyaları|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+                    if (ofd.ShowDialog() == DialogResult.OK) {
+                        try {
+                            string selectedFile = ofd.FileName;
+                            string photosDir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "PetPhotos");
+                            if (!System.IO.Directory.Exists(photosDir)) System.IO.Directory.CreateDirectory(photosDir);
+                            
+                            string destFile = System.IO.Path.Combine(photosDir, pet.Email.Replace("@", "_").Replace(".", "_") + "_" + System.IO.Path.GetFileName(selectedFile));
+                            System.IO.File.Copy(selectedFile, destFile, true);
+                            
+                            pet.HayvanResimYolu = destFile;
+                            picPet.Image = Image.FromFile(destFile);
+                            refreshDeleteButton();
+                            MessageBox.Show("Fotoğraf seçildi! Kaydet butonuna basarak kalıcı hale getirebilirsiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        } catch (Exception ex) {
+                            MessageBox.Show("Resim yüklenirken hata oluştu: " + ex.Message);
+                        }
+                    }
+                }
+            };
+
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(picPet, "Fotoğraf eklemek/değiştirmek için tıklayın");
+            parent.Controls.Add(picPet);
+
+            // --- FORM ALANLARI ---
+            Action<string, string, Control, int> addField = (label, key, ctrl, y) => {
+                Label lbl = new Label { Text = label, Font = new Font("Segoe UI", 11F, FontStyle.Bold), ForeColor = Color.DimGray, Location = new Point(x, y), Width = 150 };
+                ctrl.Location = new Point(inputX, y - 3);
+                ctrl.Size = new Size(inputW - 100, 32); // İkonla çakışmaması için genişlik kısıtlandı
+                if (label.Contains("Adı")) ctrl.Size = new Size(inputW - 100, 32); 
+                else if (label.Contains("Sözlük") || label.Contains("Notu")) {
+                    ctrl.Location = new Point(inputX, y - 3);
+                    ctrl.Size = new Size(inputW, 80);
+                }
+                else ctrl.Width = inputW - 100;
+
+                parent.Controls.Add(lbl);
+                parent.Controls.Add(ctrl);
+            };
+
+            // 1. Hayvan Adı
+            TextEdit txtPetName = new TextEdit { Font = new Font("Segoe UI", 11F), Text = pet.HayvanAdi ?? "" };
+            txtPetName.Properties.NullText = "Hayvanınızın adını girin...";
+            addField("Hayvan Adı:", "Name", txtPetName, currentY);
+            currentY += 50;
+
+            // 2. Tür Selection
+            ComboBoxEdit cmbTur = new ComboBoxEdit { Font = new Font("Segoe UI", 11F) };
+            cmbTur.Properties.Items.AddRange(new[] { "Kedi", "Köpek", "Kuş", "Egzotik", "Diğer" });
+            cmbTur.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            addField("Hayvan Türü:", "Tur", cmbTur, currentY);
+            currentY += 50;
+
+            // 3. Cins Selection (Bağlı)
+            ComboBoxEdit cmbCins = new ComboBoxEdit { Font = new Font("Segoe UI", 11F) };
+            cmbCins.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            cmbCins.Properties.NullText = "Önce tür seçiniz...";
+            addField("Hayvan Cinsi:", "Cins", cmbCins, currentY);
+            currentY += 50;
+
+            // --- BAĞLI SEÇİM MANTIĞI ---
+            Action updateBreeds = () => {
+                string selectedTur = cmbTur.Text;
+                cmbCins.Properties.Items.Clear();
+                
+                // Eğer özel resim yoksa ikonu türe göre güncelle
+                if (string.IsNullOrEmpty(pet.HayvanResimYolu) || !System.IO.File.Exists(pet.HayvanResimYolu)) {
+                    Bitmap bmp = new Bitmap(picPet.Width, picPet.Height);
+                    using (Graphics g = Graphics.FromImage(bmp)) {
+                        g.Clear(Color.FromArgb(240, 240, 240));
+                        using (Font f = new Font("Segoe UI", 48F)) {
+                            string icon = selectedTur == "Kedi" ? "🐱" : selectedTur == "Köpek" ? "🐶" : selectedTur == "Kuş" ? "🦜" : "🐾";
+                            g.DrawString(icon, f, Brushes.LightGray, new PointF(15, 15));
+                        }
+                    }
+                    picPet.Image = bmp;
+                }
+                
+                if (selectedTur == "Kedi") cmbCins.Properties.Items.AddRange(new[] { "Tekir", "British Shorthair", "Scottish Fold", "Siyam", "Ankara", "Van", "Persian", "Sfenks", "Maine Coon" });
+                else if (selectedTur == "Köpek") cmbCins.Properties.Items.AddRange(new[] { "Golden Retriever", "Terrier", "Alman Kurdu", "Pug", "Pitbull", "Beagle", "Boxer", "Bulldog", "Chihuahua", "Dalmaçyalı", "Doberman", "Kangal", "Rotweiler" });
+                else if (selectedTur == "Kuş") cmbCins.Properties.Items.AddRange(new[] { "Muhabbet Kuşu", "Kanarya", "Papağan (Sultan)", "Papağan (Jako)", "Güvercin" });
+                else if (!string.IsNullOrEmpty(selectedTur)) cmbCins.Properties.Items.AddRange(new[] { "Tavşan", "Hamster", "Ginepig", "İguana", "Kaplumbağa" });
+            };
+
+            cmbTur.SelectedIndexChanged += (s, e) => {
+                cmbCins.Text = "";
+                updateBreeds();
+            };
+
+            // 4. Yaş Selection
+            ComboBoxEdit cmbYas = new ComboBoxEdit { Font = new Font("Segoe UI", 11F) };
+            for(int i=0; i<21; i++) cmbYas.Properties.Items.Add(i + " Yaşında");
+            cmbYas.Properties.Items.Add("Bebek / Yeni Doğmuş");
+            cmbYas.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            addField("Hayvan Yaşı:", "Yas", cmbYas, currentY);
+            currentY += 50;
+
+            // 5. Mikroçip
+            ComboBoxEdit cmbCip = new ComboBoxEdit { Font = new Font("Segoe UI", 11F) };
+            cmbCip.Properties.Items.AddRange(new[] { "Mevcut (Kayıtlı)", "Mevcut Değil", "Bilinmiyor" });
+            cmbCip.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            addField("Mikroçip Durumu:", "Cip", cmbCip, currentY);
+            currentY += 50;
+
+            // 6. Sağlık Notu
+            MemoEdit txtNote = new MemoEdit { Font = new Font("Segoe UI", 10F), Text = pet.HayvanSaglikNotu ?? "" };
+            txtNote.Properties.NullValuePrompt = "Alerji, kronik hastalık veya özel bakım notlarını buraya yazınız...";
+            addField("Sağlık Notu:", "Note", txtNote, currentY);
+            currentY += 100;
+
+            // --- MEVCUT VERİLERİ YÜKLE ---
+            if (!string.IsNullOrEmpty(pet.HayvanTurCins)) {
+                if (pet.HayvanTurCins.Contains("(")) {
+                    string[] parts = pet.HayvanTurCins.Split(new[] { '(', ')' }, StringSplitOptions.RemoveEmptyEntries);
+                    cmbTur.Text = parts[0].Trim();
+                    updateBreeds(); // Populate items first
+                    cmbCins.Text = parts.Length > 1 ? parts[1].Trim() : "";
+                } else {
+                    cmbTur.Text = pet.HayvanTurCins;
+                    updateBreeds();
+                }
+            }
+            cmbYas.Text = pet.HayvanYasi ?? "";
+            cmbCip.Text = pet.HayvanMikrocip ?? "";
+
+            // --- KAYDET BUTONU ---
+            SimpleButton btnSave = new SimpleButton {
+                Text = "🐾 HAYVAN BİLGİLERİNİ GÜNCELLE",
+                Size = new Size(inputW, 50),
+                Location = new Point(inputX, currentY),
+                Appearance = { 
+                    BackColor = Color.Orange, 
+                    ForeColor = Color.White, 
+                    Font = new Font("Segoe UI", 12F, FontStyle.Bold),
+                    Options = { UseBackColor = true, UseForeColor = true, UseFont = true }
+                },
+                ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat
+            };
+
+            btnSave.Click += (s, e) => {
+                if (string.IsNullOrWhiteSpace(txtPetName.Text)) {
+                    MessageBox.Show("Lütfen hayvanınızın adını giriniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                
+                pet.HayvanAdi = txtPetName.Text.Trim();
+                // Tür ve Cinsi birleştirerek kaydet (Akıllı Asistan formatı)
+                pet.HayvanTurCins = cmbTur.Text + (string.IsNullOrEmpty(cmbCins.Text) ? "" : " (" + cmbCins.Text + ")");
+                pet.HayvanYasi = cmbYas.Text;
+                pet.HayvanMikrocip = cmbCip.Text;
+                pet.HayvanSaglikNotu = txtNote.Text.Trim();
+
+                if (KullaniciVeriYonetimi.Kaydet(allUsers)) {
+                    // Yönetici paneli için Musteriler ve Hastalar tablolarını da güncelle
+                    try {
+                        using (var db = new VetClinic.UI1.Data.VetClinicContext()) {
+                            // 1. Musteriler tablosunu güncelle
+                            var musteri = db.Musteriler.FirstOrDefault(m => m.Eposta != null && m.Eposta.ToLower() == pet.Email.ToLower());
+                            if (musteri != null) {
+                                string hayvanBilgisi = pet.HayvanAdi + " (" + cmbTur.Text + ")";
+                                // Eğer bu hayvan zaten yoksa ekle, varsa güncelleme
+                                if (string.IsNullOrEmpty(musteri.Hayvanlar)) {
+                                    musteri.Hayvanlar = hayvanBilgisi;
+                                } else if (!musteri.Hayvanlar.Contains(pet.HayvanAdi)) {
+                                    musteri.Hayvanlar += ", " + hayvanBilgisi;
+                                } else {
+                                    // Mevcut hayvanı güncelle (regex ile)
+                                    string pattern = pet.HayvanAdi + @"\s*\([^)]*\)";
+                                    musteri.Hayvanlar = System.Text.RegularExpressions.Regex.Replace(musteri.Hayvanlar, pattern, hayvanBilgisi);
+                                }
+                            }
+
+                            // 2. Hastalar tablosunu güncelle/ekle
+                            var hasta = db.Hastalar.FirstOrDefault(h => h.HayvanAdi == pet.HayvanAdi && h.Sahibi == pet.AdSoyad);
+                            if (hasta != null) {
+                                // Güncelle
+                                hasta.Tur = cmbTur.Text;
+                                hasta.Cins = cmbCins.Text;
+                                hasta.Yas = cmbYas.Text.Replace(" Yaşında", "");
+                                hasta.ResimYolu = pet.HayvanResimYolu; // Fotoğrafı da güncelle
+                            } else {
+                                // Yeni kayıt ekle
+                                db.Hastalar.Add(new HastaDetay {
+                                    HayvanAdi = pet.HayvanAdi,
+                                    Tur = cmbTur.Text,
+                                    Cins = cmbCins.Text,
+                                    Yas = cmbYas.Text.Replace(" Yaşında", ""),
+                                    Cinsiyet = "-",
+                                    Sahibi = pet.AdSoyad ?? "Bilinmiyor",
+                                    ResimYolu = pet.HayvanResimYolu // Fotoğraf yolunu da ekle
+                                });
+                            }
+
+                            db.SaveChanges();
+                        }
+                    } catch (Exception ex) {
+                        System.Diagnostics.Debug.WriteLine("Admin sync error: " + ex.Message);
+                    }
+
+                    MessageBox.Show("Hayvan bilgileriniz başarıyla güncellendi! \n✨ Artık Akıllı Asistan'dan güncel rapor alabilirsiniz.\n📋 Yönetici paneline de kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } else {
+                    MessageBox.Show("Bilgiler kaydedilirken bir hata oluştu.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            };
+            parent.Controls.Add(btnSave);
+        }
+
         private async void ShowDashboard()
         {
             if (dashboardPanel != null)
             {
                 panelContent.Controls.Remove(dashboardPanel);
-                dashboardPanel.Dispose();
             }
             
             dashboardPanel = new Panel();
@@ -2501,12 +3300,51 @@ namespace VetClinic.UI1
             grid.MainView = view;
             grid.ViewCollection.Add(view);
 
-            // Verileri Hazırla
-            List<Musteri> musteriListesi;
+            // Verileri Hazırla - Kullanicilar ve Musteriler tablolarını birleştir
+            List<dynamic> musteriListesi = new List<dynamic>();
             using (var db = new VetClinicContext())
             {
-                 db.EnsureSeeded();
-                 musteriListesi = db.Musteriler.ToList();
+                db.EnsureSeeded();
+                
+                // Tüm müşterileri (admin olmayanları) Kullanicilar tablosundan çek
+                var kullanicilar = db.Kullanicilar
+                    .Where(k => !k.IsAdmin)
+                    .ToList();
+
+                int id = 1;
+                foreach (var k in kullanicilar)
+                {
+                    // Musteriler tablosundan telefon bilgisini al (varsa)
+                    var musteriKaydi = db.Musteriler.FirstOrDefault(m => m.Eposta != null && m.Eposta.ToLower() == k.Email.ToLower());
+                    string telefon = musteriKaydi?.Telefon ?? "Girilmedi";
+                    
+                    // Hayvan bilgisini önce Kullanici tablosundan, yoksa Musteriler'den al
+                    string hayvanlar = "";
+                    if (!string.IsNullOrEmpty(k.HayvanAdi) && !string.IsNullOrEmpty(k.HayvanTurCins))
+                    {
+                        // Tür bilgisini ayıkla (örn: "Kedi (Tekir)" -> "Kedi")
+                        string tur = k.HayvanTurCins.Contains("(") 
+                            ? k.HayvanTurCins.Split('(')[0].Trim() 
+                            : k.HayvanTurCins;
+                        hayvanlar = k.HayvanAdi + " (" + tur + ")";
+                    }
+                    else if (musteriKaydi != null && !string.IsNullOrEmpty(musteriKaydi.Hayvanlar))
+                    {
+                        hayvanlar = musteriKaydi.Hayvanlar;
+                    }
+                    else
+                    {
+                        hayvanlar = "Henüz Kayıtlı Hayvan Yok";
+                    }
+
+                    musteriListesi.Add(new {
+                        Id = id++,
+                        AdSoyad = k.AdSoyad ?? "Bilgi Yok",
+                        Telefon = telefon,
+                        Eposta = k.Email,
+                        Hayvanlar = hayvanlar
+                    });
+                }
             }
 
             grid.DataSource = musteriListesi;
@@ -2661,25 +3499,56 @@ namespace VetClinic.UI1
                 else if (h.Cins.Contains("Golden") || h.HayvanAdi == "Max") imgName = "pet_dog.png"; // Mevcut Golden
                 else if (h.Tur == "Kuş") imgName = "pet_bird.png"; // Mevcut Kuş
                 
-                // Resim yükleme
-                 string imgPath = string.Empty;
-                 try
-                {
-                    string currentDir = AppDomain.CurrentDomain.BaseDirectory;
-                    for (int i = 0; i < 5; i++)
-                    {
-                        string checkPath = System.IO.Path.Combine(currentDir, "Resources", imgName);
-                        if (System.IO.File.Exists(checkPath))
-                        {
-                            imgPath = checkPath;
-                            break;
-                        }
-                        var parent = System.IO.Directory.GetParent(currentDir);
-                        if (parent == null) break;
-                        currentDir = parent.FullName;
+                // Resim yükleme - Önce müşterinin yüklediği fotoğrafı kontrol et
+                string imgPath = string.Empty;
+                bool customPhotoLoaded = false;
+                
+                try {
+                    // 1. Önce Hastalar tablosundaki ResimYolu'nu kontrol et
+                    if (!string.IsNullOrEmpty(h.ResimYolu) && System.IO.File.Exists(h.ResimYolu)) {
+                        pic.Image = Image.FromFile(h.ResimYolu);
+                        customPhotoLoaded = true;
                     }
-                    if (!string.IsNullOrEmpty(imgPath)) pic.Image = Image.FromFile(imgPath);
-                } catch {}
+                    
+                    // 2. Yoksa, sahibinin Kullanicilar tablosundan hayvan resmini çek
+                    if (!customPhotoLoaded) {
+                        using (var db2 = new VetClinicContext()) {
+                            // Sahibinin adına göre kullanıcıyı bul
+                            var sahip = db2.Kullanicilar
+                                .FirstOrDefault(k => k.AdSoyad != null && 
+                                    k.AdSoyad.ToLower() == h.Sahibi.ToLower() &&
+                                    k.HayvanAdi != null && 
+                                    k.HayvanAdi.ToLower() == h.HayvanAdi.ToLower());
+                            
+                            if (sahip != null && !string.IsNullOrEmpty(sahip.HayvanResimYolu) && 
+                                System.IO.File.Exists(sahip.HayvanResimYolu)) {
+                                pic.Image = Image.FromFile(sahip.HayvanResimYolu);
+                                customPhotoLoaded = true;
+                            }
+                        }
+                    }
+                } catch { }
+
+                // Özel fotoğraf yoksa varsayılan ikonları kullan
+                if (!customPhotoLoaded) {
+                    try
+                    {
+                        string currentDir = AppDomain.CurrentDomain.BaseDirectory;
+                        for (int i = 0; i < 5; i++)
+                        {
+                            string checkPath = System.IO.Path.Combine(currentDir, "Resources", imgName);
+                            if (System.IO.File.Exists(checkPath))
+                            {
+                                imgPath = checkPath;
+                                break;
+                            }
+                            var parent = System.IO.Directory.GetParent(currentDir);
+                            if (parent == null) break;
+                            currentDir = parent.FullName;
+                        }
+                        if (!string.IsNullOrEmpty(imgPath)) pic.Image = Image.FromFile(imgPath);
+                    } catch {}
+                }
 
                 card.Controls.Add(pic);
 

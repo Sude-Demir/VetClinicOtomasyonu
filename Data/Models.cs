@@ -37,6 +37,7 @@ namespace VetClinic.UI1
         public string Yas { get; set; }
         public string Cinsiyet { get; set; }
         public string Sahibi { get; set; }
+        public string ResimYolu { get; set; }
     }
 
     public class TedaviKaydi

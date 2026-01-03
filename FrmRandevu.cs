@@ -14,6 +14,11 @@ namespace VetClinic.UI1
         // Static constructor to initialize from database
         static FrmRandevu()
         {
+            LoadFromDatabase();
+        }
+
+        public static void LoadFromDatabase()
+        {
             using (var db = new VetClinic.UI1.Data.VetClinicContext())
             {
                 db.EnsureSeeded();
@@ -29,7 +34,15 @@ namespace VetClinic.UI1
                     Aciklama = r.Aciklama,
                     Hekim = r.Hekim
                 }).ToList();
-                RandevuListesi = new System.ComponentModel.BindingList<Randevu>(randevular);
+                
+                if (RandevuListesi == null)
+                    RandevuListesi = new System.ComponentModel.BindingList<Randevu>(randevular);
+                else
+                {
+                    RandevuListesi.Clear();
+                    foreach (var r in randevular)
+                        RandevuListesi.Add(r);
+                }
             }
         }
 
@@ -479,9 +492,7 @@ namespace VetClinic.UI1
                 Hekim = secilenHekim.Split('-')[0].Trim()
             };
 
-            // Listeye ekle
-            RandevuListesi.Add(yeniRandevu);
-            
+
             // Veritabanına kaydet
             using (var db = new VetClinic.UI1.Data.VetClinicContext())
             {
@@ -497,6 +508,9 @@ namespace VetClinic.UI1
                 });
                 db.SaveChanges();
             }
+
+            // Listeyi veritabanından yeniden yükle
+            LoadFromDatabase();
 
             // Özeti güncelle
             string ozet = $"✅ Randevu Başarıyla Oluşturuldu!\n\n" +

@@ -34,6 +34,7 @@ namespace VetClinic.UI1
                             k.HayvanYasi = kullanici.HayvanYasi;
                             k.HayvanMikrocip = kullanici.HayvanMikrocip;
                             k.HayvanSaglikNotu = kullanici.HayvanSaglikNotu;
+                            k.HayvanResimYolu = kullanici.HayvanResimYolu;
 
                             // 2. Musteriler Güncelle (Eğer Admin değilse)
                             if (!k.IsAdmin)
@@ -73,7 +74,8 @@ namespace VetClinic.UI1
                                 HayvanTurCins = kullanici.HayvanTurCins,
                                 HayvanYasi = kullanici.HayvanYasi,
                                 HayvanMikrocip = kullanici.HayvanMikrocip,
-                                HayvanSaglikNotu = kullanici.HayvanSaglikNotu
+                                HayvanSaglikNotu = kullanici.HayvanSaglikNotu,
+                                HayvanResimYolu = kullanici.HayvanResimYolu
                             });
 
                             // Yeni Musteri ekle (Eğer Admin değilse)
@@ -117,7 +119,8 @@ namespace VetClinic.UI1
                         HayvanTurCins = k.HayvanTurCins,
                         HayvanYasi = k.HayvanYasi,
                         HayvanMikrocip = k.HayvanMikrocip,
-                        HayvanSaglikNotu = k.HayvanSaglikNotu
+                        HayvanSaglikNotu = k.HayvanSaglikNotu,
+                        HayvanResimYolu = k.HayvanResimYolu
                     }).ToList();
                 }
             }
@@ -199,7 +202,8 @@ namespace VetClinic.UI1
                             HayvanTurCins = k.HayvanTurCins,
                             HayvanYasi = k.HayvanYasi,
                             HayvanMikrocip = k.HayvanMikrocip,
-                            HayvanSaglikNotu = k.HayvanSaglikNotu
+                            HayvanSaglikNotu = k.HayvanSaglikNotu,
+                            HayvanResimYolu = k.HayvanResimYolu
                         };
                     }
                 }
