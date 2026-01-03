@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRandevu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Randevu>
+    <Id>1</Id>
+    <Tur>Muayene</Tur>
+    <Durum>Onaylandı</Durum>
+    <HastaAd>Pamuk</HastaAd>
+    <HastaSoyad>Yılmaz</HastaSoyad>
+    <RandevuTarihi>2026-01-10T10:30:00</RandevuTarihi>
+    <Aciklama>Genel sağlık kontrolü</Aciklama>
+    <Hekim>Dr. Ahmet</Hekim>
+  </Randevu>
+  <Randevu>
+    <Id>2</Id>
+    <Tur>Aşı</Tur>
+    <Durum>Beklemede</Durum>
+    <HastaAd>Boncuk</HastaAd>
+    <HastaSoyad>Demir</HastaSoyad>
+    <RandevuTarihi>2026-01-10T11:00:00</RandevuTarihi>
+    <Aciklama>Kuduz aşısı</Aciklama>
+    <Hekim>Dr. Elif</Hekim>
+  </Randevu>
+  <Randevu>
+    <Id>3</Id>
+    <Tur>Kontrol</Tur>
+    <Durum>Tamamlandı</Durum>
+    <HastaAd>Leo</HastaAd>
+    <HastaSoyad>Kaya</HastaSoyad>
+    <RandevuTarihi>2026-01-09T14:00:00</RandevuTarihi>
+    <Aciklama>Ameliyat sonrası kontrol</Aciklama>
+    <Hekim>Dr. Mehmet</Hekim>
+  </Randevu>
+  <Randevu>
+    <Id>4</Id>
+    <Tur>Acil</Tur>
+    <Durum>Onaylandı</Durum>
+    <HastaAd>Karabaş</HastaAd>
+    <HastaSoyad>Çetin</HastaSoyad>
+    <RandevuTarihi>2026-01-10T15:45:00</RandevuTarihi>
+    <Aciklama>İştahsızlık ve halsizlik</Aciklama>
+    <Hekim>Dr. Ahmet</Hekim>
+  </Randevu>
+  <Randevu>
+    <Id>5</Id>
+    <Tur>Muayene</Tur>
+    <Durum>İptal Edildi</Durum>
+    <HastaAd>Maviş</HastaAd>
+    <HastaSoyad>Arslan</HastaSoyad>
+    <RandevuTarihi>2026-01-11T09:30:00</RandevuTarihi>
+    <Aciklama>Sahip randevuyu iptal etti</Aciklama>
+    <Hekim>Dr. Elif</Hekim>
+  </Randevu>
+  <Randevu>
+    <Id>6</Id>
+    <Tur>Aşı</Tur>
+    <Durum>Beklemede</Durum>
+    <HastaAd>Boncuk</HastaAd>
+    <HastaSoyad>mervan</HastaSoyad>
+    <RandevuTarihi>2026-01-02T09:30:00+03:00</RandevuTarihi>
+    <Aciklama>Süre: 30 dk, Aciliyet: Orta</Aciklama>
+    <Hekim>Dr. Mehmet</Hekim>
+  </Randevu>
+</ArrayOfRandevu>

@@ -14,10 +14,28 @@ namespace VetClinic.UI1
         [STAThread]
         static void Main()
         {
+            // Veritabanını başlangıçta hazırla
+            try
+            {
+                using (var db = new VetClinic.UI1.Data.VetClinicContext())
+                {
+                    db.EnsureSeeded();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(
+                    $"Veritabanı başlatma hatası:\n{ex.Message}\n\n{ex.InnerException?.Message}\n\n{ex.StackTrace}",
+                    "Başlatma Hatası",
+                    System.Windows.Forms.MessageBoxButtons.OK,
+                    System.Windows.Forms.MessageBoxIcon.Error);
+                return;
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // LoginForm ile başlatıyoruz
-            Application.Run(new LoginForm());
+            // FrmRoleSelection ile başlatıyoruz
+            Application.Run(new FrmRoleSelection());
         }
     }
 }

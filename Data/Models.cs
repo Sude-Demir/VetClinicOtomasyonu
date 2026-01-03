@@ -52,5 +52,26 @@ namespace VetClinic.UI1
         public string Hekim { get; set; }
     }
 
+    public class DoktorDegerlendirme
+    {
+        [Key]
+        public int Id { get; set; }
+        public string MusteriEmail { get; set; }
+        public string HekimAdSoyad { get; set; }
+        public int Puan { get; set; } // 1-5 arası
+        public string Yorum { get; set; }
+        public DateTime Tarih { get; set; }
+    }
 
+    public class DanismaSorusu
+    {
+        [Key]
+        public int Id { get; set; }
+        public string MusteriEmail { get; set; }
+        public string HekimAd { get; set; }
+        public string Soru { get; set; }
+        public string Cevap { get; set; }
+        public DateTime Tarih { get; set; }
+        public bool Cevaplandi { get; set; }
+    }
 }

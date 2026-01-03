@@ -10,4 +10,14 @@
     <Sifre>s</Sifre>
     <IsAdmin>false</IsAdmin>
   </Kullanici>
+  <Kullanici>
+    <Email>mervan</Email>
+    <Sifre>123</Sifre>
+    <AdSoyad>Mervan Erman</AdSoyad>
+    <TCKimlikNo>34515213611</TCKimlikNo>
+    <DogumTarihi>05.06.2025</DogumTarihi>
+    <Cinsiyet>Erkek</Cinsiyet>
+    <SahipOlduguHayvan>Köpek</SahipOlduguHayvan>
+    <IsAdmin>false</IsAdmin>
+  </Kullanici>
 </ArrayOfKullanici>

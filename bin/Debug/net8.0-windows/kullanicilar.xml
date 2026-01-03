@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKullanici xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Kullanici>
+    <Email>mervan</Email>
+    <Sifre>123</Sifre>
+    <AdSoyad>mervan erman</AdSoyad>
+    <TCKimlikNo />
+    <DogumTarihi>09.07.2016</DogumTarihi>
+    <Cinsiyet>Erkek</Cinsiyet>
+    <SahipOlduguHayvan>Tavşan</SahipOlduguHayvan>
+    <HayvanAdi>Pamuk</HayvanAdi>
+    <HayvanTurCins>Tavşan</HayvanTurCins>
+    <HayvanYasi>6</HayvanYasi>
+    <HayvanMikrocip>Bilinmiyor</HayvanMikrocip>
+    <HayvanSaglikNotu>Yok</HayvanSaglikNotu>
+    <IsAdmin>false</IsAdmin>
+  </Kullanici>
+</ArrayOfKullanici>

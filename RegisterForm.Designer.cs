@@ -22,8 +22,10 @@
             this.lblPass2 = new DevExpress.XtraEditors.LabelControl();
             this.lblPass = new DevExpress.XtraEditors.LabelControl();
             this.lblEmail = new DevExpress.XtraEditors.LabelControl();
+            this.lblAdSoyad = new DevExpress.XtraEditors.LabelControl();
             this.lblTitle = new DevExpress.XtraEditors.LabelControl();
             this.txtRegEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtRegName = new DevExpress.XtraEditors.TextEdit();
             this.txtRegPassword = new DevExpress.XtraEditors.TextEdit();
             this.txtRegPassword2 = new DevExpress.XtraEditors.TextEdit();
             this.btnRegister = new DevExpress.XtraEditors.SimpleButton();
@@ -31,6 +33,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBackground)).BeginInit();
             this.panelCenter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRegName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegPassword2.Properties)).BeginInit();
             this.SuspendLayout();
@@ -52,15 +55,17 @@
             this.panelCenter.Controls.Add(this.lblPass2);
             this.panelCenter.Controls.Add(this.lblPass);
             this.panelCenter.Controls.Add(this.lblEmail);
+            this.panelCenter.Controls.Add(this.lblAdSoyad);
             this.panelCenter.Controls.Add(this.lblTitle);
             this.panelCenter.Controls.Add(this.txtRegEmail);
+            this.panelCenter.Controls.Add(this.txtRegName);
             this.panelCenter.Controls.Add(this.txtRegPassword);
             this.panelCenter.Controls.Add(this.txtRegPassword2);
             this.panelCenter.Controls.Add(this.btnRegister);
             this.panelCenter.Controls.Add(this.btnClose);
-            this.panelCenter.Location = new System.Drawing.Point(300, 75);
+            this.panelCenter.Location = new System.Drawing.Point(300, 50);
             this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(400, 450);
+            this.panelCenter.Size = new System.Drawing.Size(400, 500);
             this.panelCenter.TabIndex = 1;
             // 
             // lblPass2
@@ -69,10 +74,10 @@
             this.lblPass2.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.lblPass2.Appearance.Options.UseFont = true;
             this.lblPass2.Appearance.Options.UseForeColor = true;
-            this.lblPass2.Location = new System.Drawing.Point(50, 240);
+            this.lblPass2.Location = new System.Drawing.Point(50, 310);
             this.lblPass2.Name = "lblPass2";
             this.lblPass2.Size = new System.Drawing.Size(68, 15);
-            this.lblPass2.TabIndex = 5;
+            this.lblPass2.TabIndex = 7;
             this.lblPass2.Text = "Şifre Tekrar";
             // 
             // lblPass
@@ -81,10 +86,10 @@
             this.lblPass.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.lblPass.Appearance.Options.UseFont = true;
             this.lblPass.Appearance.Options.UseForeColor = true;
-            this.lblPass.Location = new System.Drawing.Point(50, 170);
+            this.lblPass.Location = new System.Drawing.Point(50, 240);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(28, 15);
-            this.lblPass.TabIndex = 3;
+            this.lblPass.TabIndex = 5;
             this.lblPass.Text = "Şifre";
             // 
             // lblEmail
@@ -93,11 +98,23 @@
             this.lblEmail.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.lblEmail.Appearance.Options.UseFont = true;
             this.lblEmail.Appearance.Options.UseForeColor = true;
-            this.lblEmail.Location = new System.Drawing.Point(50, 100);
+            this.lblEmail.Location = new System.Drawing.Point(50, 170);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(75, 15);
-            this.lblEmail.TabIndex = 1;
+            this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = "Kullanıcı Adı";
+            // 
+            // lblAdSoyad
+            // 
+            this.lblAdSoyad.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblAdSoyad.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.lblAdSoyad.Appearance.Options.UseFont = true;
+            this.lblAdSoyad.Appearance.Options.UseForeColor = true;
+            this.lblAdSoyad.Location = new System.Drawing.Point(50, 100);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(52, 15);
+            this.lblAdSoyad.TabIndex = 1;
+            this.lblAdSoyad.Text = "Ad Soyad";
             // 
             // lblTitle
             // 
@@ -113,32 +130,41 @@
             // 
             // txtRegEmail
             // 
-            this.txtRegEmail.Location = new System.Drawing.Point(50, 120);
+            this.txtRegEmail.Location = new System.Drawing.Point(50, 190);
             this.txtRegEmail.Name = "txtRegEmail";
             this.txtRegEmail.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtRegEmail.Properties.Appearance.Options.UseFont = true;
             this.txtRegEmail.Size = new System.Drawing.Size(300, 35);
-            this.txtRegEmail.TabIndex = 2;
+            this.txtRegEmail.TabIndex = 4;
+            // 
+            // txtRegName
+            // 
+            this.txtRegName.Location = new System.Drawing.Point(50, 120);
+            this.txtRegName.Name = "txtRegName";
+            this.txtRegName.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtRegName.Properties.Appearance.Options.UseFont = true;
+            this.txtRegName.Size = new System.Drawing.Size(300, 35);
+            this.txtRegName.TabIndex = 2;
             // 
             // txtRegPassword
             // 
-            this.txtRegPassword.Location = new System.Drawing.Point(50, 190);
+            this.txtRegPassword.Location = new System.Drawing.Point(50, 260);
             this.txtRegPassword.Name = "txtRegPassword";
             this.txtRegPassword.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtRegPassword.Properties.Appearance.Options.UseFont = true;
             this.txtRegPassword.Properties.PasswordChar = '●';
             this.txtRegPassword.Size = new System.Drawing.Size(300, 35);
-            this.txtRegPassword.TabIndex = 4;
+            this.txtRegPassword.TabIndex = 6;
             // 
             // txtRegPassword2
             // 
-            this.txtRegPassword2.Location = new System.Drawing.Point(50, 260);
+            this.txtRegPassword2.Location = new System.Drawing.Point(50, 330);
             this.txtRegPassword2.Name = "txtRegPassword2";
             this.txtRegPassword2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtRegPassword2.Properties.Appearance.Options.UseFont = true;
             this.txtRegPassword2.Properties.PasswordChar = '●';
             this.txtRegPassword2.Size = new System.Drawing.Size(300, 35);
-            this.txtRegPassword2.TabIndex = 6;
+            this.txtRegPassword2.TabIndex = 8;
             // 
             // btnRegister
             // 
@@ -149,10 +175,10 @@
             this.btnRegister.Appearance.Options.UseFont = true;
             this.btnRegister.Appearance.Options.UseForeColor = true;
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.Location = new System.Drawing.Point(50, 330);
+            this.btnRegister.Location = new System.Drawing.Point(50, 400);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(300, 45);
-            this.btnRegister.TabIndex = 7;
+            this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "KAYIT OL";
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
@@ -165,10 +191,10 @@
             this.btnClose.Appearance.Options.UseFont = true;
             this.btnClose.Appearance.Options.UseForeColor = true;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Location = new System.Drawing.Point(50, 385);
+            this.btnClose.Location = new System.Drawing.Point(50, 455);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(300, 30);
-            this.btnClose.TabIndex = 8;
+            this.btnClose.TabIndex = 10;
             this.btnClose.Text = "İptal Et ve Geri Dön";
             this.btnClose.Click += new System.EventHandler((s, e) => this.Close());
             // 
@@ -189,6 +215,7 @@
             this.panelCenter.ResumeLayout(false);
             this.panelCenter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRegName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegPassword2.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -200,12 +227,14 @@
         private System.Windows.Forms.PictureBox picBackground;
         private System.Windows.Forms.Panel panelCenter;
         private DevExpress.XtraEditors.LabelControl lblTitle;
-        private DevExpress.XtraEditors.TextEdit txtRegEmail;
+         private DevExpress.XtraEditors.TextEdit txtRegEmail;
+        private DevExpress.XtraEditors.TextEdit txtRegName;
         private DevExpress.XtraEditors.TextEdit txtRegPassword;
         private DevExpress.XtraEditors.TextEdit txtRegPassword2;
         private DevExpress.XtraEditors.SimpleButton btnRegister;
         private DevExpress.XtraEditors.SimpleButton btnClose;
         private DevExpress.XtraEditors.LabelControl lblEmail;
+        private DevExpress.XtraEditors.LabelControl lblAdSoyad;
         private DevExpress.XtraEditors.LabelControl lblPass;
         private DevExpress.XtraEditors.LabelControl lblPass2;
     }

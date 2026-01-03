@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "Tur": "Muayene",
+    "Durum": "Onaylandı",
+    "HastaAd": "Pamuk",
+    "HastaSoyad": "Yılmaz",
+    "RandevuTarihi": "2026-01-10T10:30:00",
+    "Aciklama": "Genel sağlık kontrolü",
+    "Hekim": "Dr. Ahmet"
+  },
+  {
+    "Id": 2,
+    "Tur": "Aşı",
+    "Durum": "Beklemede",
+    "HastaAd": "Boncuk",
+    "HastaSoyad": "Demir",
+    "RandevuTarihi": "2026-01-10T11:00:00",
+    "Aciklama": "Kuduz aşısı",
+    "Hekim": "Dr. Elif"
+  },
+  {
+    "Id": 3,
+    "Tur": "Kontrol",
+    "Durum": "Tamamlandı",
+    "HastaAd": "Leo",
+    "HastaSoyad": "Kaya",
+    "RandevuTarihi": "2026-01-09T14:00:00",
+    "Aciklama": "Ameliyat sonrası kontrol",
+    "Hekim": "Dr. Mehmet"
+  },
+  {
+    "Id": 4,
+    "Tur": "Acil",
+    "Durum": "Onaylandı",
+    "HastaAd": "Karabaş",
+    "HastaSoyad": "Çetin",
+    "RandevuTarihi": "2026-01-10T15:45:00",
+    "Aciklama": "İştahsızlık ve halsizlik",
+    "Hekim": "Dr. Ahmet"
+  },
+  {
+    "Id": 5,
+    "Tur": "Muayene",
+    "Durum": "İptal Edildi",
+    "HastaAd": "Maviş",
+    "HastaSoyad": "Arslan",
+    "RandevuTarihi": "2026-01-11T09:30:00",
+    "Aciklama": "Sahip randevuyu iptal etti",
+    "Hekim": "Dr. Elif"
+  },
+  {
+    "Id": 6,
+    "Tur": "Aşı",
+    "Durum": "Beklemede",
+    "HastaAd": "Boncuk",
+    "HastaSoyad": "mervan",
+    "RandevuTarihi": "2026-01-02T09:30:00+03:00",
+    "Aciklama": "Süre: 30 dk, Aciliyet: Orta",
+    "Hekim": "Dr. Mehmet"
+  },
+  {
+    "Id": 7,
+    "Tur": "Aşı",
+    "Durum": "Beklemede",
+    "HastaAd": "Pamuk",
+    "HastaSoyad": "mervan",
+    "RandevuTarihi": "2026-01-02T10:30:00+03:00",
+    "Aciklama": "Süre: 45 dk, Aciliyet: Normal",
+    "Hekim": "Dr. Elif"
+  }
+]
